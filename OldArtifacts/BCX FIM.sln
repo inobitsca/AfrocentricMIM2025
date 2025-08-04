@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "adExtension", "adExtension\adExtension.vbproj", "{35D53EDC-3925-4E10-8268-52613E43DB48}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MVExtension", "MVExtension\MVExtension.vbproj", "{0BC1A8A8-6C61-42E5-BB0D-113E57488499}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sap sql hrExtension", "sap sql hrExtension\sap sql hrExtension.vbproj", "{7AFBCEDE-CCDF-44AE-9CF7-63AF3DE615DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D53EDC-3925-4E10-8268-52613E43DB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D53EDC-3925-4E10-8268-52613E43DB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D53EDC-3925-4E10-8268-52613E43DB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D53EDC-3925-4E10-8268-52613E43DB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC1A8A8-6C61-42E5-BB0D-113E57488499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC1A8A8-6C61-42E5-BB0D-113E57488499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC1A8A8-6C61-42E5-BB0D-113E57488499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC1A8A8-6C61-42E5-BB0D-113E57488499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFBCEDE-CCDF-44AE-9CF7-63AF3DE615DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFBCEDE-CCDF-44AE-9CF7-63AF3DE615DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFBCEDE-CCDF-44AE-9CF7-63AF3DE615DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFBCEDE-CCDF-44AE-9CF7-63AF3DE615DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

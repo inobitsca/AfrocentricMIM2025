@@ -1,0 +1,1251 @@
+<export-ma server='FIMMIDV01' export-date='2016-09-06 07:24:01.950'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}</id>
+ <name>fim</name>
+ <category>FIM</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2013-01-21 13:57:13.090</creation-time>
+ <last-modification-time>2016-09-06 07:03:13.047</last-modification-time>
+ <version>50434</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="DetectedRuleEntry" type="structural"><dsml:name>DetectedRuleEntry</dsml:name><dsml:attribute ref="#ObjectID" required="false" /><dsml:attribute ref="#Connector" required="true" /><dsml:attribute ref="#CreatedTime" required="false" /><dsml:attribute ref="#Creator" required="false" /><dsml:attribute ref="#DeletedTime" required="false" /><dsml:attribute ref="#Description" required="false" /><dsml:attribute ref="#DetectedRulesList" required="false" /><dsml:attribute ref="#DisplayName" required="false" /><dsml:attribute ref="#ExpectedRulesList" required="false" /><dsml:attribute ref="#ExpirationTime" required="false" /><dsml:attribute ref="#Locale" required="false" /><dsml:attribute ref="#MVObjectID" required="false" /><dsml:attribute ref="#ObjectType" required="false" /><dsml:attribute ref="#ResourceParent" required="false" /><dsml:attribute ref="#ResourceTime" required="false" /><dsml:attribute ref="#SynchronizationRuleID" required="false" /></dsml:class><dsml:class id="ExpectedRuleEntry" type="structural"><dsml:name>ExpectedRuleEntry</dsml:name><dsml:attribute ref="#ObjectID" required="false" /><dsml:attribute ref="#CreatedTime" required="false" /><dsml:attribute ref="#Creator" required="false" /><dsml:attribute ref="#DeletedTime" required="false" /><dsml:attribute ref="#Description" required="false" /><dsml:attribute ref="#DetectedRulesList" required="false" /><dsml:attribute ref="#DisplayName" required="false" /><dsml:attribute ref="#ExpectedRuleEntryAction" required="true" /><dsml:attribute ref="#ExpectedRulesList" required="false" /><dsml:attribute ref="#ExpirationTime" required="false" /><dsml:attribute ref="#Locale" required="false" /><dsml:attribute ref="#MVObjectID" required="false" /><dsml:attribute ref="#ObjectType" required="false" /><dsml:attribute ref="#ResourceParent" required="false" /><dsml:attribute ref="#ResourceTime" required="false" /><dsml:attribute ref="#StatusError" required="false" /><dsml:attribute ref="#SynchronizationRuleData" required="false" /><dsml:attribute ref="#SynchronizationRuleID" required="false" /><dsml:attribute ref="#SynchronizationRuleName" required="true" /><dsml:attribute ref="#SynchronizationRuleStatus" required="true" /></dsml:class><dsml:class id="Group" type="structural"><dsml:name>Group</dsml:name><dsml:attribute ref="#ObjectID" required="false" /><dsml:attribute ref="#AccountName" required="false" /><dsml:attribute ref="#CreatedTime" required="false" /><dsml:attribute ref="#Creator" required="false" /><dsml:attribute ref="#DeletedTime" required="false" /><dsml:attribute ref="#Description" required="false" /><dsml:attribute ref="#DetectedRulesList" required="false" /><dsml:attribute ref="#DisplayedOwner" required="false" /><dsml:attribute ref="#DisplayName" required="false" /><dsml:attribute ref="#Domain" required="true" /><dsml:attribute ref="#DomainConfiguration" required="false" /><dsml:attribute ref="#Email" required="false" /><dsml:attribute ref="#ExpectedRulesList" required="false" /><dsml:attribute ref="#ExpirationTime" required="false" /><dsml:attribute ref="#Filter" required="false" /><dsml:attribute ref="#Locale" required="false" /><dsml:attribute ref="#MailNickname" required="false" /><dsml:attribute ref="#MembershipAddWorkflow" required="true" /><dsml:attribute ref="#MembershipLocked" required="true" /><dsml:attribute ref="#MVObjectID" required="false" /><dsml:attribute ref="#ObjectSID" required="false" /><dsml:attribute ref="#ObjectType" required="false" /><dsml:attribute ref="#Owner" required="false" /><dsml:attribute ref="#ResourceTime" required="false" /><dsml:attribute ref="#Scope" required="true" /><dsml:attribute ref="#SIDHistory" required="false" /><dsml:attribute ref="#Temporal" required="false" /><dsml:attribute ref="#Type" required="true" /><dsml:attribute ref="#msidmDeferredEvaluation" required="false" /><dsml:attribute ref="#Member" required="false" /></dsml:class><dsml:class id="Person" type="structural"><dsml:name>Person</dsml:name><dsml:attribute ref="#ObjectID" required="false" /><dsml:attribute ref="#AccountName" required="false" /><dsml:attribute ref="#AD_UserCannotChangePassword" required="false" /><dsml:attribute ref="#Address" required="false" /><dsml:attribute ref="#Assistant" required="false" /><dsml:attribute ref="#AuthNLockoutRegistrationID" required="false" /><dsml:attribute ref="#AuthNWFLockedOut" required="false" /><dsml:attribute ref="#AuthNWFRegistered" required="false" /><dsml:attribute ref="#City" required="false" /><dsml:attribute ref="#Company" required="false" /><dsml:attribute ref="#CostCenter" required="false" /><dsml:attribute ref="#CostCenterName" required="false" /><dsml:attribute ref="#Country" required="false" /><dsml:attribute ref="#CreatedTime" required="false" /><dsml:attribute ref="#Creator" required="false" /><dsml:attribute ref="#DeletedTime" required="false" /><dsml:attribute ref="#Department" required="false" /><dsml:attribute ref="#Description" required="false" /><dsml:attribute ref="#DetectedRulesList" required="false" /><dsml:attribute ref="#DisplayName" required="false" /><dsml:attribute ref="#Domain" required="false" /><dsml:attribute ref="#DomainConfiguration" required="false" /><dsml:attribute ref="#Email" required="false" /><dsml:attribute ref="#EmployeeEndDate" required="false" /><dsml:attribute ref="#EmployeeID" required="false" /><dsml:attribute ref="#EmployeeStartDate" required="false" /><dsml:attribute ref="#EmployeeType" required="false" /><dsml:attribute ref="#ExpectedRulesList" required="false" /><dsml:attribute ref="#ExpirationTime" required="false" /><dsml:attribute ref="#FirstName" required="false" /><dsml:attribute ref="#FreezeCount" required="false" /><dsml:attribute ref="#FreezeLevel" required="false" /><dsml:attribute ref="#IsRASEnabled" required="false" /><dsml:attribute ref="#JobTitle" required="false" /><dsml:attribute ref="#LastName" required="false" /><dsml:attribute ref="#LastResetAttemptTime" required="false" /><dsml:attribute ref="#Locale" required="false" /><dsml:attribute ref="#LoginName" required="false" /><dsml:attribute ref="#MailNickname" required="false" /><dsml:attribute ref="#Manager" required="false" /><dsml:attribute ref="#MiddleName" required="false" /><dsml:attribute ref="#MobilePhone" required="false" /><dsml:attribute ref="#MVObjectID" required="false" /><dsml:attribute ref="#ObjectSID" required="false" /><dsml:attribute ref="#ObjectType" required="false" /><dsml:attribute ref="#OfficeFax" required="false" /><dsml:attribute ref="#OfficeLocation" required="false" /><dsml:attribute ref="#OfficePhone" required="false" /><dsml:attribute ref="#Photo" required="false" /><dsml:attribute ref="#PostalCode" required="false" /><dsml:attribute ref="#ProxyAddressCollection" required="false" /><dsml:attribute ref="#Register" required="false" /><dsml:attribute ref="#RegistrationRequired" required="false" /><dsml:attribute ref="#ResetPassword" required="false" /><dsml:attribute ref="#ResourceTime" required="false" /><dsml:attribute ref="#SIDHistory" required="false" /><dsml:attribute ref="#TimeZone" required="false" /><dsml:attribute ref="#msidmOneTimePasswordMobilePhone" required="false" /><dsml:attribute ref="#msidmOneTimePasswordEmailAddress" required="false" /><dsml:attribute ref="#ProvisionRequestAD" required="false" /><dsml:attribute ref="#ProvisionRequest" required="false" /></dsml:class><dsml:class id="SynchronizationRule" type="structural"><dsml:name>SynchronizationRule</dsml:name><dsml:attribute ref="#ObjectID" required="false" /><dsml:attribute ref="#ConnectedObjectType" required="true" /><dsml:attribute ref="#ConnectedSystem" required="true" /><dsml:attribute ref="#ConnectedSystemScope" required="false" /><dsml:attribute ref="#CreateConnectedSystemObject" required="true" /><dsml:attribute ref="#CreatedTime" required="false" /><dsml:attribute ref="#CreateILMObject" required="true" /><dsml:attribute ref="#Creator" required="false" /><dsml:attribute ref="#DeletedTime" required="false" /><dsml:attribute ref="#Dependency" required="false" /><dsml:attribute ref="#Description" required="false" /><dsml:attribute ref="#DetectedRulesList" required="false" /><dsml:attribute ref="#DisconnectConnectedSystemObject" required="true" /><dsml:attribute ref="#DisplayName" required="false" /><dsml:attribute ref="#ExistenceTest" required="false" /><dsml:attribute ref="#ExpectedRulesList" required="false" /><dsml:attribute ref="#ExpirationTime" required="false" /><dsml:attribute ref="#FlowType" required="true" /><dsml:attribute ref="#ILMObjectType" required="true" /><dsml:attribute ref="#InitialFlow" required="false" /><dsml:attribute ref="#Locale" required="false" /><dsml:attribute ref="#MVObjectID" required="false" /><dsml:attribute ref="#ObjectType" required="false" /><dsml:attribute ref="#PersistentFlow" required="false" /><dsml:attribute ref="#Precedence" required="false" /><dsml:attribute ref="#RelationshipCriteria" required="true" /><dsml:attribute ref="#ResourceTime" required="false" /><dsml:attribute ref="#SynchronizationRuleParameters" required="false" /><dsml:attribute ref="#ManagementAgentID" required="false" /><dsml:attribute ref="#msidmOutboundIsFilterBased" required="false" /><dsml:attribute ref="#msidmOutboundScopingFilters" required="false" /></dsml:class><dsml:attribute-type id="ObjectID" single-value="true" isreadonly="true" ms-dsml:immutable="true"><dsml:name>ObjectID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Connector" single-value="true"><dsml:name>Connector</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CreatedTime" single-value="true" isreadonly="true"><dsml:name>CreatedTime</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Creator" single-value="true" isreadonly="true"><dsml:name>Creator</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DeletedTime" single-value="true" isreadonly="true"><dsml:name>DeletedTime</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Description" single-value="true"><dsml:name>Description</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DetectedRulesList" single-value="false"><dsml:name>DetectedRulesList</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DisplayName" single-value="true"><dsml:name>DisplayName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ExpectedRulesList" single-value="false"><dsml:name>ExpectedRulesList</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ExpirationTime" single-value="true"><dsml:name>ExpirationTime</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Locale" single-value="true" isreadonly="true"><dsml:name>Locale</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MVObjectID" single-value="true"><dsml:name>MVObjectID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ObjectType" single-value="true" isreadonly="true"><dsml:name>ObjectType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ResourceParent" single-value="true"><dsml:name>ResourceParent</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ResourceTime" single-value="true" isreadonly="true"><dsml:name>ResourceTime</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SynchronizationRuleID" single-value="true"><dsml:name>SynchronizationRuleID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ExpectedRuleEntryAction" single-value="true"><dsml:name>ExpectedRuleEntryAction</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="StatusError" single-value="true"><dsml:name>StatusError</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SynchronizationRuleData" single-value="false"><dsml:name>SynchronizationRuleData</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SynchronizationRuleName" single-value="true"><dsml:name>SynchronizationRuleName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SynchronizationRuleStatus" single-value="true"><dsml:name>SynchronizationRuleStatus</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AccountName" single-value="true"><dsml:name>AccountName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DisplayedOwner" single-value="true"><dsml:name>DisplayedOwner</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Domain" single-value="true"><dsml:name>Domain</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DomainConfiguration" single-value="true"><dsml:name>DomainConfiguration</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Email" single-value="true"><dsml:name>Email</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Filter" single-value="true"><dsml:name>Filter</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MailNickname" single-value="true"><dsml:name>MailNickname</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MembershipAddWorkflow" single-value="true"><dsml:name>MembershipAddWorkflow</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MembershipLocked" single-value="true"><dsml:name>MembershipLocked</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ObjectSID" single-value="true"><dsml:name>ObjectSID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.5</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Owner" single-value="false"><dsml:name>Owner</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Scope" single-value="true"><dsml:name>Scope</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SIDHistory" single-value="false"><dsml:name>SIDHistory</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.5</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Temporal" single-value="true"><dsml:name>Temporal</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Type" single-value="true"><dsml:name>Type</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="msidmDeferredEvaluation" single-value="true"><dsml:name>msidmDeferredEvaluation</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Member" single-value="false"><dsml:name>Member</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AD_UserCannotChangePassword" single-value="true"><dsml:name>AD_UserCannotChangePassword</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Address" single-value="true"><dsml:name>Address</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Assistant" single-value="true"><dsml:name>Assistant</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AuthNLockoutRegistrationID" single-value="false"><dsml:name>AuthNLockoutRegistrationID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AuthNWFLockedOut" single-value="false"><dsml:name>AuthNWFLockedOut</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AuthNWFRegistered" single-value="false"><dsml:name>AuthNWFRegistered</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="City" single-value="true"><dsml:name>City</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Company" single-value="true"><dsml:name>Company</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CostCenter" single-value="true"><dsml:name>CostCenter</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CostCenterName" single-value="true"><dsml:name>CostCenterName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Country" single-value="true"><dsml:name>Country</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Department" single-value="true"><dsml:name>Department</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeEndDate" single-value="true"><dsml:name>EmployeeEndDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeID" single-value="true"><dsml:name>EmployeeID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeStartDate" single-value="true"><dsml:name>EmployeeStartDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeType" single-value="true"><dsml:name>EmployeeType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FirstName" single-value="true"><dsml:name>FirstName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FreezeCount" single-value="true"><dsml:name>FreezeCount</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FreezeLevel" single-value="true"><dsml:name>FreezeLevel</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="IsRASEnabled" single-value="true"><dsml:name>IsRASEnabled</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="JobTitle" single-value="true"><dsml:name>JobTitle</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="LastName" single-value="true"><dsml:name>LastName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="LastResetAttemptTime" single-value="true"><dsml:name>LastResetAttemptTime</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="LoginName" single-value="true"><dsml:name>LoginName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Manager" single-value="true"><dsml:name>Manager</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MiddleName" single-value="true"><dsml:name>MiddleName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MobilePhone" single-value="true"><dsml:name>MobilePhone</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OfficeFax" single-value="true"><dsml:name>OfficeFax</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OfficeLocation" single-value="true"><dsml:name>OfficeLocation</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OfficePhone" single-value="true"><dsml:name>OfficePhone</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Photo" single-value="true"><dsml:name>Photo</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.5</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PostalCode" single-value="true"><dsml:name>PostalCode</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ProxyAddressCollection" single-value="false"><dsml:name>ProxyAddressCollection</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Register" single-value="true"><dsml:name>Register</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RegistrationRequired" single-value="true"><dsml:name>RegistrationRequired</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ResetPassword" single-value="true"><dsml:name>ResetPassword</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TimeZone" single-value="true"><dsml:name>TimeZone</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="msidmOneTimePasswordMobilePhone" single-value="true"><dsml:name>msidmOneTimePasswordMobilePhone</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="msidmOneTimePasswordEmailAddress" single-value="true"><dsml:name>msidmOneTimePasswordEmailAddress</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ProvisionRequestAD" single-value="true"><dsml:name>ProvisionRequestAD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ProvisionRequest" single-value="true"><dsml:name>ProvisionRequest</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ConnectedObjectType" single-value="true"><dsml:name>ConnectedObjectType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ConnectedSystem" single-value="true"><dsml:name>ConnectedSystem</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ConnectedSystemScope" single-value="true"><dsml:name>ConnectedSystemScope</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CreateConnectedSystemObject" single-value="true"><dsml:name>CreateConnectedSystemObject</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CreateILMObject" single-value="true"><dsml:name>CreateILMObject</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Dependency" single-value="true"><dsml:name>Dependency</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DisconnectConnectedSystemObject" single-value="true"><dsml:name>DisconnectConnectedSystemObject</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ExistenceTest" single-value="false"><dsml:name>ExistenceTest</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FlowType" single-value="true"><dsml:name>FlowType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ILMObjectType" single-value="true"><dsml:name>ILMObjectType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="InitialFlow" single-value="false"><dsml:name>InitialFlow</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PersistentFlow" single-value="false"><dsml:name>PersistentFlow</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Precedence" single-value="true"><dsml:name>Precedence</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RelationshipCriteria" single-value="true"><dsml:name>RelationshipCriteria</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SynchronizationRuleParameters" single-value="false"><dsml:name>SynchronizationRuleParameters</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ManagementAgentID" single-value="true"><dsml:name>ManagementAgentID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="msidmOutboundIsFilterBased" single-value="true"><dsml:name>msidmOutboundIsFilterBased</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="msidmOutboundScopingFilters" single-value="true"><dsml:name>msidmOutboundScopingFilters</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>AccountName</attribute><attribute>AD_UserCannotChangePassword</attribute><attribute>Address</attribute><attribute>Assistant</attribute><attribute>AuthNLockoutRegistrationID</attribute><attribute>AuthNWFLockedOut</attribute><attribute>AuthNWFRegistered</attribute><attribute>City</attribute><attribute>Company</attribute><attribute>ConnectedObjectType</attribute><attribute>ConnectedSystem</attribute><attribute>ConnectedSystemScope</attribute><attribute>Connector</attribute><attribute>CostCenter</attribute><attribute>CostCenterName</attribute><attribute>Country</attribute><attribute>CreateConnectedSystemObject</attribute><attribute>CreatedTime</attribute><attribute>CreateILMObject</attribute><attribute>Creator</attribute><attribute>DeletedTime</attribute><attribute>Department</attribute><attribute>Dependency</attribute><attribute>Description</attribute><attribute>DetectedRulesList</attribute><attribute>DisconnectConnectedSystemObject</attribute><attribute>DisplayedOwner</attribute><attribute>DisplayName</attribute><attribute>Domain</attribute><attribute>DomainConfiguration</attribute><attribute>Email</attribute><attribute>EmployeeEndDate</attribute><attribute>EmployeeID</attribute><attribute>EmployeeStartDate</attribute><attribute>EmployeeType</attribute><attribute>ExistenceTest</attribute><attribute>ExpectedRuleEntryAction</attribute><attribute>ExpectedRulesList</attribute><attribute>ExpirationTime</attribute><attribute>Filter</attribute><attribute>FirstName</attribute><attribute>FlowType</attribute><attribute>FreezeCount</attribute><attribute>FreezeLevel</attribute><attribute>ILMObjectType</attribute><attribute>InitialFlow</attribute><attribute>IsRASEnabled</attribute><attribute>JobTitle</attribute><attribute>LastName</attribute><attribute>LastResetAttemptTime</attribute><attribute>Locale</attribute><attribute>LoginName</attribute><attribute>MailNickname</attribute><attribute>ManagementAgentID</attribute><attribute>Manager</attribute><attribute>Member</attribute><attribute>MembershipAddWorkflow</attribute><attribute>MembershipLocked</attribute><attribute>MiddleName</attribute><attribute>MobilePhone</attribute><attribute>msidmDeferredEvaluation</attribute><attribute>msidmOneTimePasswordEmailAddress</attribute><attribute>msidmOneTimePasswordMobilePhone</attribute><attribute>msidmOutboundIsFilterBased</attribute><attribute>msidmOutboundScopingFilters</attribute><attribute>MVObjectID</attribute><attribute>ObjectID</attribute><attribute>ObjectSID</attribute><attribute>ObjectType</attribute><attribute>OfficeFax</attribute><attribute>OfficeLocation</attribute><attribute>OfficePhone</attribute><attribute>Owner</attribute><attribute>PersistentFlow</attribute><attribute>Photo</attribute><attribute>PostalCode</attribute><attribute>Precedence</attribute><attribute>ProvisionRequest</attribute><attribute>ProvisionRequestAD</attribute><attribute>ProxyAddressCollection</attribute><attribute>Register</attribute><attribute>RegistrationRequired</attribute><attribute>RelationshipCriteria</attribute><attribute>ResetPassword</attribute><attribute>ResourceParent</attribute><attribute>ResourceTime</attribute><attribute>Scope</attribute><attribute>SIDHistory</attribute><attribute>StatusError</attribute><attribute>SynchronizationRuleData</attribute><attribute>SynchronizationRuleID</attribute><attribute>SynchronizationRuleName</attribute><attribute>SynchronizationRuleParameters</attribute><attribute>SynchronizationRuleStatus</attribute><attribute>Temporal</attribute><attribute>TimeZone</attribute><attribute>Type</attribute></attribute-inclusion>
+ <stay-disconnector><filter-set import-filter="0" cd-object-type="Person" type="declared"><filter-alternative id="{C9A6C29F-FF6C-462C-864D-7942D0EE10CD}"><condition cd-attribute="DisplayName" operator="equality"><value>Built-in Synchronization Account</value></condition></filter-alternative><filter-alternative id="{287B6FA4-EBB6-4969-ADF0-03D773AB8717}"><condition cd-attribute="DisplayName" operator="equality"><value>FIMADMIN</value></condition></filter-alternative><filter-alternative id="{D8C7B4BC-040B-49FB-8769-CF8AEA3B6192}"><condition cd-attribute="DisplayName" operator="equality"><value>ProvisionRequestActor</value></condition></filter-alternative></filter-set></stay-disconnector>
+ <join><join-profile cd-object-type="DetectedRuleEntry"><join-criterion id="{0DDC9360-147B-4F80-8DCC-F01D3EAD721A}"><search mv-object-type="detectedRuleEntry"><attribute-mapping mv-attribute="csObjectID"><direct-mapping><src-attribute intrinsic="true">dn</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{D9A20707-974A-4DF1-857F-01A66D1EBCE6}"><search mv-object-type="detectedRuleEntry"><attribute-mapping mv-attribute="object-id" intrinsic-attribute="true"><direct-mapping><src-attribute>MVObjectID</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="ExpectedRuleEntry"><join-criterion id="{02A06971-30CC-4C54-85CC-65A8FAC00796}"><search mv-object-type="expectedRuleEntry"><attribute-mapping mv-attribute="csObjectID"><direct-mapping><src-attribute intrinsic="true">dn</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{78DBBE4F-BFBC-412F-A88E-735E96B5E0D9}"><search mv-object-type="expectedRuleEntry"><attribute-mapping mv-attribute="object-id" intrinsic-attribute="true"><direct-mapping><src-attribute>MVObjectID</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="Group"><join-criterion id="{667A5546-DA3F-4E29-B0E9-DB3A2849FAF0}"><search mv-object-type="group"><attribute-mapping mv-attribute="csObjectID"><direct-mapping><src-attribute intrinsic="true">dn</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{B374BB30-8319-41E8-9126-4C84BED5A716}"><search mv-object-type="group"><attribute-mapping mv-attribute="object-id" intrinsic-attribute="true"><direct-mapping><src-attribute>MVObjectID</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="Person"><join-criterion id="{DB2AC96F-F7E0-4EC8-9727-70FB9D4E69A6}"><search mv-object-type="person"><attribute-mapping mv-attribute="csObjectID"><direct-mapping><src-attribute intrinsic="true">dn</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{7C6BE21A-CC2D-4268-926B-725C078A58B6}"><search mv-object-type="person"><attribute-mapping mv-attribute="object-id" intrinsic-attribute="true"><direct-mapping><src-attribute>MVObjectID</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="SynchronizationRule"><join-criterion id="{8D58408F-5C7C-4FC3-90AB-00DC17E21749}"><search mv-object-type="synchronizationRule"><attribute-mapping mv-attribute="csObjectID"><direct-mapping><src-attribute intrinsic="true">dn</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{DC55E2A1-8DB1-441B-ACC9-E46E58D9F854}"><search mv-object-type="synchronizationRule"><attribute-mapping mv-attribute="object-id" intrinsic-attribute="true"><direct-mapping><src-attribute>MVObjectID</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile></join>
+ <projection><class-mapping type="declared" id="{FDDB9A72-4DDE-43F0-A741-513B0E0BF37C}" cd-object-type="DetectedRuleEntry"><mv-object-type>detectedRuleEntry</mv-object-type></class-mapping><class-mapping type="declared" id="{38B78E0F-C4F0-487A-BE85-733B92A7C53E}" cd-object-type="ExpectedRuleEntry"><mv-object-type>expectedRuleEntry</mv-object-type></class-mapping><class-mapping type="declared" id="{7B08C032-A476-45D6-929B-2C6C2819E3D3}" cd-object-type="Group"><mv-object-type>group</mv-object-type></class-mapping><class-mapping type="declared" id="{37DD2CE0-283F-4AA9-9B47-1D339463CA61}" cd-object-type="Person"><mv-object-type>person</mv-object-type></class-mapping><class-mapping type="declared" id="{C2A3B159-81B8-40DB-AE0A-7ADB227F9916}" cd-object-type="SynchronizationRule"><mv-object-type>synchronizationRule</mv-object-type></class-mapping></projection>
+ <export-attribute-flow><export-flow-set cd-object-type="DetectedRuleEntry" mv-object-type="detectedRuleEntry"><export-flow cd-attribute="SynchronizationRuleID" id="{3E2D518A-59DE-4A35-A407-1FEF2F46F984}" suppress-deletions="true"><direct-mapping><src-attribute>synchronizationRuleID</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DisplayName" id="{2CF37E83-060C-4A45-8E47-8C21A6B27ABC}" suppress-deletions="true"><direct-mapping><src-attribute>displayName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Connector" id="{B06501B3-7D5B-40DA-A38F-9A709B394C6F}" suppress-deletions="true"><direct-mapping><src-attribute>connector</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="ResourceParent" id="{79D36465-56C7-4817-8CE1-8B835CE82C45}" suppress-deletions="true"><direct-mapping><src-attribute>resourceParent</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="dn" id="{5F375C8A-F916-47E4-84F5-1E3A09DD330B}"><sync-rule-mapping mapping-type="expression" sync-rule-id="{F8F73654-8286-4006-BBC3-B6ADEF873E0F}" sync-rule-mapping-id="{F8F73654-8286-4006-BBC3-B6ADEF873E0F}" initial-flow-only="true"><sync-rule-value><export-flow><dest>dn</dest><src><attr /></src><fn id="Guid" /></export-flow></sync-rule-value></sync-rule-mapping></export-flow><export-flow cd-attribute="MVObjectID" id="{E4003559-2F5F-404D-AAA7-94A70066A5A5}" suppress-deletions="true"><direct-mapping><src-attribute intrinsic="true">object-id</src-attribute></direct-mapping></export-flow></export-flow-set><export-flow-set cd-object-type="ExpectedRuleEntry" mv-object-type="expectedRuleEntry"><export-flow cd-attribute="StatusError" id="{6C221698-AE1D-49FE-B77E-9C101D1E581B}" suppress-deletions="true"><direct-mapping><src-attribute>statusError</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="SynchronizationRuleStatus" id="{4683295D-29B5-4303-9FB4-54B134792BAB}" suppress-deletions="true"><direct-mapping><src-attribute>status</src-attribute></direct-mapping></export-flow></export-flow-set><export-flow-set cd-object-type="Group" mv-object-type="group"><export-flow cd-attribute="dn" id="{6638D94B-6CE2-46EF-B90A-57FC99C5694C}"><sync-rule-mapping mapping-type="expression" sync-rule-id="{131128A6-75D2-4B1F-B73A-3C849FA21D47}" sync-rule-mapping-id="{131128A6-75D2-4B1F-B73A-3C849FA21D47}" initial-flow-only="true"><sync-rule-value><export-flow><dest>dn</dest><src><attr /></src><fn id="Guid" /></export-flow></sync-rule-value></sync-rule-mapping></export-flow><export-flow cd-attribute="MVObjectID" id="{0F83DB26-E78E-4626-872C-0036A95DF6C9}" suppress-deletions="true"><direct-mapping><src-attribute intrinsic="true">object-id</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DetectedRulesList" id="{6AA6BE6C-71D5-41FA-948E-6419585A967E}" suppress-deletions="false"><direct-mapping><src-attribute>detectedRulesList</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="AccountName" id="{9330D81A-BA94-4872-A03C-1F90B4A1D23E}" suppress-deletions="true"><direct-mapping><src-attribute>accountName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DisplayName" id="{2017A662-F2E4-452F-833E-8BCE2958378C}" suppress-deletions="true"><direct-mapping><src-attribute>displayName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Domain" id="{ACCE857B-107D-4A33-A29E-DDBDB7C371FD}" suppress-deletions="true"><direct-mapping><src-attribute>domain</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Email" id="{FC791AA7-B9FB-47DB-A6A5-8EAA17F94FA7}" suppress-deletions="true"><direct-mapping><src-attribute>mail</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="MailNickname" id="{3B7DDF27-0C36-4B68-B485-D984CF6AD879}" suppress-deletions="true"><direct-mapping><src-attribute>mailNickname</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Member" id="{845AE765-0C32-4112-ADE6-3CCE99B950F1}" suppress-deletions="true"><direct-mapping><src-attribute>member</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="ObjectSID" id="{C5793884-C8AD-4556-AB6C-75062A58370C}" suppress-deletions="true"><direct-mapping><src-attribute>objectSid</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Scope" id="{CFCD6570-AC31-4B91-BD03-3C9598EF5943}" suppress-deletions="true"><direct-mapping><src-attribute>scope</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Type" id="{55C9CE0D-562B-4011-AEA1-BC57C71F4E8F}" suppress-deletions="true"><direct-mapping><src-attribute>type</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="MembershipAddWorkflow" id="{E0237728-1A1C-4D1B-8FAF-D21A6CAC5B42}" suppress-deletions="true"><direct-mapping><src-attribute>membershipAddWorkflow</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="MembershipLocked" id="{3CBA95C1-DD21-4B17-8EAA-8609696A4505}" suppress-deletions="true"><direct-mapping><src-attribute>membershipLocked</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DisplayedOwner" id="{DEED0429-2191-4912-A4EF-7BDA657C5D00}" suppress-deletions="true"><direct-mapping><src-attribute>displayedOwner</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Description" id="{8856CDEF-9FD6-4154-A02E-0D35B423C545}" suppress-deletions="true"><direct-mapping><src-attribute>description</src-attribute></direct-mapping></export-flow></export-flow-set><export-flow-set cd-object-type="Person" mv-object-type="person"><export-flow cd-attribute="dn" id="{A64F1E1F-C2FB-46FF-B127-381FE75E4094}"><sync-rule-mapping mapping-type="expression" sync-rule-id="{8C71A11E-1AFC-4380-BD28-1E17432FCA41}" sync-rule-mapping-id="{8C71A11E-1AFC-4380-BD28-1E17432FCA41}" initial-flow-only="true"><sync-rule-value><export-flow><dest>dn</dest><src><attr /></src><fn id="Guid" /></export-flow></sync-rule-value></sync-rule-mapping></export-flow><export-flow cd-attribute="MVObjectID" id="{3793C504-CA2C-424B-8D19-6518A047E775}" suppress-deletions="true"><direct-mapping><src-attribute intrinsic="true">object-id</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DetectedRulesList" id="{E7E1150C-171D-4DDD-80BE-94F3E22E6394}" suppress-deletions="true"><direct-mapping><src-attribute>detectedRulesList</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="AccountName" id="{85CFA5B9-4F78-47CE-8008-87679EEACCB8}" suppress-deletions="true"><direct-mapping><src-attribute>accountName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="DisplayName" id="{45CEE3F6-3825-4F32-96B5-C39B5C3F2EB2}" suppress-deletions="true"><direct-mapping><src-attribute>displayName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Domain" id="{E0D4EEBF-2149-4B0E-8525-F54E77488CA6}" suppress-deletions="true"><direct-mapping><src-attribute>domain</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Email" id="{7732A39C-C0B0-4025-A5AE-0A521902ED3E}" suppress-deletions="true"><direct-mapping><src-attribute>mail</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="EmployeeID" id="{A990E083-9D39-46AE-BFC1-16266F5273EF}" suppress-deletions="true"><direct-mapping><src-attribute>employeeID</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="FirstName" id="{1D15D970-0A2E-4FBC-AE2D-CCCA57689C2B}" suppress-deletions="true"><direct-mapping><src-attribute>nickName</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="LastName" id="{1FF17438-91B4-4493-B590-1548B0036ABC}" suppress-deletions="true"><direct-mapping><src-attribute>sn</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="ObjectSID" id="{7C9E7A78-DFBC-469B-87BF-9C01C16EE0FE}" suppress-deletions="true"><direct-mapping><src-attribute>objectSid</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="MailNickname" id="{EF8CFFDC-F098-4371-A45E-FE27DB3371E8}" suppress-deletions="true"><direct-mapping><src-attribute>mailNickname</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="JobTitle" id="{88CAF1F3-8E48-4AD1-9203-273F7FA9395D}" suppress-deletions="true"><direct-mapping><src-attribute>jobTitle</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Department" id="{33D7ADCE-37CA-40A6-9750-76AE7CFD139D}" suppress-deletions="true"><direct-mapping><src-attribute>department</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="EmployeeEndDate" id="{0D3479BE-C1EF-4FA7-A3AC-9EAB082542A8}" suppress-deletions="true"><direct-mapping><src-attribute>employeeEndDate</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="EmployeeStartDate" id="{D9E3498E-5BFD-448A-8D54-EA2E2E8E8DA7}" suppress-deletions="true"><direct-mapping><src-attribute>employeeStartDate</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Manager" id="{9504D664-08D8-4E7E-A5C4-CB6331C12BD0}" suppress-deletions="true"><direct-mapping><src-attribute>manager</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="OfficePhone" id="{CE9758D5-EA63-4729-922C-F34A09285207}" suppress-deletions="true"><direct-mapping><src-attribute>telephoneNumber</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="OfficeFax" id="{0A22BB48-633C-4923-8E5D-31C3FCE5CF5C}" suppress-deletions="true"><direct-mapping><src-attribute>facsimileTelephoneNumber</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="MobilePhone" id="{68359FC8-08F2-4833-84AC-619954C6AC1E}" suppress-deletions="true"><direct-mapping><src-attribute>mobile</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="OfficeLocation" id="{5FE7CB3C-DDF3-4CDD-A958-B99AF8207028}" suppress-deletions="true"><direct-mapping><src-attribute>location</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="PostalCode" id="{9FE2D88A-0B03-4207-9EF7-AB598A2C5139}" suppress-deletions="true"><direct-mapping><src-attribute>postalCode</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="Country" id="{68C738DB-13EC-42D2-83DA-4164CF57214D}" suppress-deletions="true"><direct-mapping><src-attribute>country</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="EmployeeType" id="{B1BF8EE2-157D-4C61-99F2-66188DBAD988}" suppress-deletions="true"><direct-mapping><src-attribute>employeeType</src-attribute></direct-mapping></export-flow><export-flow cd-attribute="ProvisionRequestAD" id="{E9039438-B73B-40E3-B47A-291374FFD6AF}" suppress-deletions="true"><direct-mapping><src-attribute>ProvisionRequestAD</src-attribute></direct-mapping></export-flow></export-flow-set></export-attribute-flow>
+ <provisioning-cleanup type="declared"><action>delete-object</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+</controller-configuration>
+
+ <description>fim 2010 r2 ma</description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs></cs><mv></mv></attributes><filters max_mv_search_results=""></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <fimma-configuration><mms-info><column-info name="DetectedRuleEntry"><column><name>ObjectID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Connector</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreatedTime</name><data-type>DateTime</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Creator</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DeletedTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Description</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DetectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>DisplayName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExpectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpirationTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Locale</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MVObjectID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceParent</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>SynchronizationRuleID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column></column-info><column-info name="ExpectedRuleEntry"><column><name>ObjectID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreatedTime</name><data-type>DateTime</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Creator</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DeletedTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Description</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DetectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>DisplayName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExpectedRuleEntryAction</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExpectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpirationTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Locale</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MVObjectID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceParent</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>StatusError</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>SynchronizationRuleData</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>SynchronizationRuleID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>SynchronizationRuleName</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>SynchronizationRuleStatus</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column></column-info><column-info name="Group" isDynamic="1"><column><name>ObjectID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>AccountName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreatedTime</name><data-type>DateTime</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Creator</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DeletedTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Description</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DetectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>DisplayedOwner</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DisplayName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Domain</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>DomainConfiguration</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Email</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExpectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpirationTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Filter</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Locale</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MailNickname</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MembershipAddWorkflow</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>MembershipLocked</name><data-type>Boolean</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>MVObjectID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectSID</name><data-type>Binary</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Owner</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ResourceTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Scope</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>SIDHistory</name><data-type>Binary</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>Temporal</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Type</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>msidmDeferredEvaluation</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Member</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column></column-info><column-info name="Person"><column><name>ObjectID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>AccountName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>AD_UserCannotChangePassword</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Address</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Assistant</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>AuthNLockoutRegistrationID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>AuthNWFLockedOut</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>AuthNWFRegistered</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>City</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Company</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CostCenter</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CostCenterName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Country</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreatedTime</name><data-type>DateTime</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Creator</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DeletedTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Department</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Description</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DetectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>DisplayName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Domain</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DomainConfiguration</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Email</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>EmployeeEndDate</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>EmployeeID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>EmployeeStartDate</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>EmployeeType</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExpectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpirationTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>FirstName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>FreezeCount</name><data-type>Integer</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>FreezeLevel</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>IsRASEnabled</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>JobTitle</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>LastName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>LastResetAttemptTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Locale</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>LoginName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MailNickname</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Manager</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MiddleName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MobilePhone</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MVObjectID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectSID</name><data-type>Binary</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>OfficeFax</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>OfficeLocation</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>OfficePhone</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Photo</name><data-type>Binary</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>PostalCode</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ProxyAddressCollection</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>Register</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>RegistrationRequired</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResetPassword</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>SIDHistory</name><data-type>Binary</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>TimeZone</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>msidmOneTimePasswordMobilePhone</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>msidmOneTimePasswordEmailAddress</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ProvisionRequestAD</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ProvisionRequest</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column></column-info><column-info name="SynchronizationRule"><column><name>ObjectID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ConnectedObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ConnectedSystem</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ConnectedSystemScope</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreateConnectedSystemObject</name><data-type>Boolean</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreatedTime</name><data-type>DateTime</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>CreateILMObject</name><data-type>Boolean</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>Creator</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DeletedTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Dependency</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>Description</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>DetectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>DisconnectConnectedSystemObject</name><data-type>Boolean</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>DisplayName</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ExistenceTest</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpectedRulesList</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ExpirationTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>FlowType</name><data-type>Integer</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ILMObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>InitialFlow</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>Locale</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>MVObjectID</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>ObjectType</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>PersistentFlow</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>Precedence</name><data-type>Integer</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>RelationshipCriteria</name><data-type>String</data-type><isrequired>1</isrequired><ismultivalued>0</ismultivalued></column><column><name>ResourceTime</name><data-type>DateTime</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>SynchronizationRuleParameters</name><data-type>String</data-type><isrequired>0</isrequired><ismultivalued>1</ismultivalued></column><column><name>ManagementAgentID</name><data-type>Reference</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>msidmOutboundIsFilterBased</name><data-type>Boolean</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column><column><name>msidmOutboundScopingFilters</name><data-type>Text</data-type><isrequired>0</isrequired><ismultivalued>0</ismultivalued></column></column-info></mms-info><enable-unapplied-merge>0</enable-unapplied-merge><watermark>00d2a204-8f4f-42e4-b07f-2b7034863353</watermark><connection-info><server>fimmidv01</server><databasename>FIMService</databasename><authentication>integrated</authentication><user>svc-fim-ma</user><domain>africa</domain><serviceHost>http://fimmidv01:5725</serviceHost></connection-info></fimma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</id>
+  <name>default</name>
+  <creation-time>2013-01-21 13:57:13.090</creation-time>
+  <last-modification-time>2015-11-02 08:52:27.210</last-modification-time>
+  <version>24</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>DetectedRuleEntry</object-class>
+    <object-class>ExpectedRuleEntry</object-class>
+    <object-class>Group</object-class>
+    <object-class>Person</object-class>
+    <object-class>SynchronizationRule</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>31</allowed-operations>
+  <current>
+   <batch-number>25217</batch-number>
+   <sequence-number>15370700</sequence-number>
+  </current>
+  <last-successful-batch>25216</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>DetectedRuleEntry</name>
+     <hierarchy>
+      <object-class>DetectedRuleEntry</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>ExpectedRuleEntry</name>
+     <hierarchy>
+      <object-class>ExpectedRuleEntry</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Group</name>
+     <hierarchy>
+      <object-class>Group</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>SynchronizationRule</name>
+     <hierarchy>
+      <object-class>SynchronizationRule</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{818B5787-346E-4960-AB60-618C9DA1E67C}</id>
+  <name>full import</name>
+  <creation-time>2013-01-21 14:02:48.267</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-01-21 14:02:48.267</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{9721AEA1-55E4-4299-8DF4-A76AC1AF7D5D}</id>
+  <name>full sync</name>
+  <creation-time>2013-01-21 14:02:48.267</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-01-21 14:02:48.267</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{56340258-E3D1-454E-B70F-7E38888D2499}</id>
+  <name>delta import</name>
+  <creation-time>2013-01-21 14:02:48.267</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-01-21 14:02:48.267</last-modification-time>
+  <configuration><step><step-type type="delta-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{CED597C3-0687-4083-BCB2-4FA284A615D4}</id>
+  <name>delta sync</name>
+  <creation-time>2013-01-21 14:02:48.267</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-01-21 14:02:48.267</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>apply-pending</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{FDF8AF95-E615-40C3-B55B-827115D74506}</id>
+  <name>export</name>
+  <creation-time>2013-01-21 14:02:48.267</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-01-21 14:02:48.267</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data><fimma-step-data><time-limit>90</time-limit></fimma-step-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{921729AF-1107-4101-9A8A-7955DCBC02BC}</id>
+  <name>full import, delta sync</name>
+  <creation-time>2013-03-13 08:29:27.823</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-13 08:29:27.823</last-modification-time>
+  <configuration><step><step-type type="full-import"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{7F20ED55-CAD8-438D-BF31-C386D57E83A7}</id>
+  <name>full import, full sync</name>
+  <creation-time>2013-03-13 08:29:27.827</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-13 08:29:27.827</last-modification-time>
+  <configuration><step><step-type type="full-import-reevaluate-rules"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{F17D7F00-2604-4D79-BA4C-0D3CF506323B}</id>
+  <name>delta import, delta sync</name>
+  <creation-time>2013-03-13 09:14:13.583</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-13 09:14:13.583</last-modification-time>
+  <configuration><step><step-type type="delta-import"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{25CD144D-BFC9-4681-B19A-B9BF47DDCF31}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>409001</capabilities-mask>
+ <export-type>1</export-type>
+ <dn-construction><attribute>ObjectID</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+<mv-data>
+ <import-attribute-flow>
+  <import-flow-set mv-object-type="expectedRuleEntry">
+   <import-flows mv-attribute="createdTime" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{747058C3-8A60-48B1-8615-E308F5CE4A67}">
+     <direct-mapping>
+      <src-attribute>CreatedTime</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRuleEntryAction" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{BA80AED2-253E-4A57-92F5-9D587A9EF52D}">
+     <direct-mapping>
+      <src-attribute>ExpectedRuleEntryAction</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleData" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{C324C877-0555-4105-A2CD-83D94681C7C4}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleData</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{7ADFB814-81C4-4A98-8FB0-8FF992E7F8AE}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleID</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{B88BB2C9-3C5E-48FF-84F1-D0E39D8289F6}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="synchronizationRule">
+   <import-flows mv-attribute="connectedObjectType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{52C242E8-C529-4CA8-A7F2-89D1269E9EE9}">
+     <direct-mapping>
+      <src-attribute>ConnectedObjectType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="connectedSystem" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{60BF4CCB-7B73-4658-A4C0-E28356702784}">
+     <direct-mapping>
+      <src-attribute>ConnectedSystem</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="connectedSystemScope" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{6D476667-445D-4748-B383-8E8D64B547E3}">
+     <direct-mapping>
+      <src-attribute>ConnectedSystemScope</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="createConnectedSystemObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{05ACE946-3CD1-432E-B242-52B2CA4C7058}">
+     <direct-mapping>
+      <src-attribute>CreateConnectedSystemObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="createILMObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{F0F5C6E1-9965-4503-98D1-A13F31A8877D}">
+     <direct-mapping>
+      <src-attribute>CreateILMObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="dependency" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{17B9958D-0AE4-41BF-A1AE-21176CDBC0E9}">
+     <direct-mapping>
+      <src-attribute>Dependency</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="disconnectConnectedSystemObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C0D3C8CD-2F74-43E3-8B14-7808E4A94BDC}">
+     <direct-mapping>
+      <src-attribute>DisconnectConnectedSystemObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{F717F10C-4517-4612-A4EF-A6CD6002F493}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="existenceTest" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{FCFEAA7E-A96F-44E8-A543-F7383BC001B4}">
+     <direct-mapping>
+      <src-attribute>ExistenceTest</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="flowType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{01B0A69D-AF20-4A71-9773-DD77A4B024FD}">
+     <direct-mapping>
+      <src-attribute>FlowType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ilmObjectType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{ED02D35C-38AE-42E2-8825-6664546D208A}">
+     <direct-mapping>
+      <src-attribute>ILMObjectType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="initialFlow" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C4259990-5772-442B-A753-7DC35DCCCF69}">
+     <direct-mapping>
+      <src-attribute>InitialFlow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="persistentFlow" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C4C9EAA2-3E42-446F-8CD4-6847BE115178}">
+     <direct-mapping>
+      <src-attribute>PersistentFlow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="precedence" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{6E51A2C5-1591-487F-A567-4000B09499B0}">
+     <direct-mapping>
+      <src-attribute>Precedence</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="relationshipCriteria" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{97543602-3BE0-43F0-AB90-F28372F66049}">
+     <direct-mapping>
+      <src-attribute>RelationshipCriteria</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleParameters" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{00FB50C4-C836-4A8E-BA9B-FFE3740DCBAC}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleParameters</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="msidmOutboundIsFilterBased" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{5248E9AF-E558-426F-B0A5-B56CA669248A}">
+     <direct-mapping>
+      <src-attribute>msidmOutboundIsFilterBased</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="msidmOutboundScopingFilters" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{BB1879D4-E197-4B90-A4AF-339C321AC33D}">
+     <direct-mapping>
+      <src-attribute>msidmOutboundScopingFilters</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="detectedRuleEntry">
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="DetectedRuleEntry" id="{C1938F09-EB8B-4819-9271-2EFCB56E438D}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="group">
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{31FB668F-907B-41EF-831D-A61BF0629603}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRulesList" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{7DBC5FA6-E17C-4EEE-8984-00E9099520D4}">
+     <direct-mapping>
+      <src-attribute>ExpectedRulesList</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="accountName" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{E505A57A-6C04-4C5F-BD84-A04CA691C015}">
+     <direct-mapping>
+      <src-attribute>AccountName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{28D334E8-ECCB-4D97-A0CC-5507614E1EC3}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{16855A96-066B-4FEF-BDAF-052C0D4C8947}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>sAMAccountName</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayedOwner" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{E9C24EC9-1B00-400A-9BFF-EF0170C69842}">
+     <direct-mapping>
+      <src-attribute>DisplayedOwner</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{566F95A0-0082-46FC-A68F-3C799B6A3CC0}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{9FD0E7E3-AF6D-401E-94A5-F16A782ABA90}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{0447381A-39A0-4820-B29A-CEBB214CB85E}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>name</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mailNickname" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{0BEB39E2-E408-439E-93DA-6B365D331E71}">
+     <direct-mapping>
+      <src-attribute>MailNickname</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{A5776461-9460-4717-BA6B-DA0BAF6B7227}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{F06B779A-1E86-4E02-9866-8684365CF68A}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>mailNickname</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="member" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{2B8314C6-303C-43ED-A216-09E53FE80041}">
+     <direct-mapping>
+      <src-attribute>Member</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{6A637681-2ED2-4CB2-8258-39A1F2721ED1}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{BCB75B9D-3128-406E-B7AA-78651323F804}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>member</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mail" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{D3A01346-7DAC-40E9-838A-63930963BB80}">
+     <direct-mapping>
+      <src-attribute>Email</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{29CBFE2A-E4EF-4950-B578-58D613EF42D6}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{494E8991-DC6E-4612-BF7C-009BE071E878}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>mail</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="scope" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{C2995A87-47C8-44FB-9EF1-2F482077110B}">
+     <direct-mapping>
+      <src-attribute>Scope</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{82CC33F2-8B72-4D0E-8603-495E1E9DBFC6}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{DE808DEB-DA9A-4AB9-8B31-154F3118A6F6}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>groupType</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>groupType</attr></src><dest>scope</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitAnd" isCustomExpression="false"><arg>2</arg><arg>groupType</arg></fn></arg><arg>2</arg></fn></arg><arg>"Global"</arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitAnd" isCustomExpression="false"><arg>4</arg><arg>groupType</arg></fn></arg><arg>4</arg></fn></arg><arg>"DomainLocal"</arg><arg>"Universal"</arg></fn></arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="type" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{5B6AA29E-918B-4016-8E5E-519AA624D112}">
+     <direct-mapping>
+      <src-attribute>Type</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{DFEA0E3B-2EF7-41B2-B18C-13F216E5221A}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{05BE2C22-AB10-48CA-9BAC-A89E5C25B454}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>groupType</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>groupType</attr></src><dest>type</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitOr" isCustomExpression="false"><arg>14</arg><arg>groupType</arg></fn></arg><arg>14</arg></fn></arg><arg>"Distribution"</arg><arg>"Security"</arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="description" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{B8676848-1353-4625-993C-98989F021B22}">
+     <direct-mapping>
+      <src-attribute>Description</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="membershipAddWorkflow" type="equal">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{C5C62CE6-7D09-46F7-B100-3B2E7967D4A2}">
+     <constant-mapping>
+      <constant-value>Owner Approval</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{17CF4A45-7FAB-450B-9A91-140BBDC6A8A3}">
+     <sync-rule-mapping mapping-type="constant" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{602465CB-8B73-4791-9A87-05434AE85DB3}" initial-flow-only="false" is-existence-test="false">
+      <sync-rule-value>Owner Approval</sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{7E868839-ED92-4007-BA38-167DF4F51595}">
+     <direct-mapping>
+      <src-attribute>MembershipAddWorkflow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="membershipLocked" type="equal">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{A371952E-E96D-45D4-B4BD-55DA049F7F05}">
+     <constant-mapping>
+      <constant-value>0</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{FD02C924-4280-40D4-86EA-F19DEF2748C7}">
+     <sync-rule-mapping mapping-type="constant" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{7E2F5C52-A359-4A59-8C29-D1B32BDB58A8}" initial-flow-only="false" is-existence-test="false">
+      <sync-rule-value>0</sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{F1C8843B-5666-477C-857A-BC2E6E7C359F}">
+     <direct-mapping>
+      <src-attribute>MembershipLocked</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="domain" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{9C588C80-A0D2-4F70-9197-7DF0154AF240}">
+     <constant-mapping>
+      <constant-value>africa</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{1D206CEF-1C99-4A41-AA18-09E20F64D7A4}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{5AC06848-2C46-43D0-A17C-9FBD25112D62}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>dn</attr></src><dest>domain</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="Word" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="UpperCase" isCustomExpression="false"><arg>dn</arg></fn></arg><arg>"|"</arg><arg>" "</arg></fn></arg><arg>",DC="</arg><arg>"|"</arg></fn></arg><arg>2</arg><arg>"|"</arg></fn></arg><arg>"AFRICA"</arg></fn></arg><arg>"HQ"</arg><arg><fn id="Word" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="UpperCase" isCustomExpression="false"><arg>dn</arg></fn></arg><arg>"|"</arg><arg>" "</arg></fn></arg><arg>",DC="</arg><arg>"|"</arg></fn></arg><arg>2</arg><arg>"|"</arg></fn></arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="objectSid" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{4F7E4E8D-EA93-4A4F-A675-0E9E9874D609}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{37B8C298-EE55-4D07-B2E5-97551F906C61}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>objectSid</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="person">
+   <import-flows mv-attribute="officeIntPhone" type="ranked">
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{AFBA54AB-0221-4065-A8D9-005279E059B9}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneIntOffice</src-attribute>
+      <script-context>cd.person:PhoneIntOffice-&gt;mv.person:officeIntPhone</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B42C712D-D4E7-4644-99B2-0D08A433DF16}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneIntOffice</src-attribute>
+      <script-context>cd.person:PhoneIntOffice-&gt;mv.person:officeIntPhone</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="superiorPosition" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{9DFEB85A-D64C-44BD-B3D9-A994D47A93FE}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>ManagerPernr</src-attribute>
+      <script-context>cd.person:ManagerPernr-&gt;mv.person:superiorPosition</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{BDC23E0E-0571-4298-9F9B-A0C121D5C359}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>ManagerPernr</src-attribute>
+      <script-context>cd.person:ManagerPernr-&gt;mv.person:superiorPosition</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="hrSourceMA" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{DAD544EC-A73D-40D0-9BE4-7607D8892894}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:hrSourceMA</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{8F041A66-7936-4FBE-9AB2-B5A62EE46142}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:hrSourceMA</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="physicalDeliveryOfficeName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{8C64946E-DAE8-46B1-BB45-25508DA0C0F4}">
+     <direct-mapping>
+      <src-attribute>physicalDeliveryOfficeName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="initials" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{B222ED6C-6E3F-4B11-810B-88BFE1EB5BA2}">
+     <direct-mapping>
+      <src-attribute>initials</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="givenName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{B676F5D2-DBB5-44BB-A2D7-12639F0CC84D}">
+     <direct-mapping>
+      <src-attribute>givenName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="description" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{9218BFF5-A694-4905-893D-4D46DBC41125}">
+     <direct-mapping>
+      <src-attribute>description</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="company" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{FC2A233E-BE17-4D0D-A5B2-2202E1D56C07}">
+     <direct-mapping>
+      <src-attribute>company</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ProvisionRequestAD" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{86D3251E-07DA-46FE-B33D-C9278C6C6A2E}">
+     <direct-mapping>
+      <src-attribute>ProvisionRequestAD</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{7DD56CBB-4314-496C-B383-1689EDEFD39F}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <script-context>cd.person:&lt;dn&gt;-&gt;mv.person:ProvisionRequestAD</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5A3281F4-F1DA-4351-A52A-21C8DD8E8288}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <script-context>cd.person:&lt;dn&gt;-&gt;mv.person:ProvisionRequestAD</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ProvisionApproval" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{139E024C-3EC7-459C-9D6F-F27307F3FC40}">
+     <direct-mapping>
+      <src-attribute>ProvisionRequest</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="dn" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D729AF6D-8F54-4B30-9C89-34F3D73A13B6}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="cn" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D310669C-AB70-483F-B352-7569E24ACB90}">
+     <direct-mapping>
+      <src-attribute>cn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="name" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{469DAF40-20B2-4732-800C-9E4283F61646}">
+     <direct-mapping>
+      <src-attribute>name</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mailNickname" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{B6E79E4C-C322-4D28-8F41-D1C2C5DEFE12}">
+     <direct-mapping>
+      <src-attribute>mailNickname</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="managerName" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{116F78B0-3DC2-45C4-818E-3EF4261C6EBE}">
+     <direct-mapping>
+      <src-attribute>Manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{96947C46-7F7F-4141-AF58-F735FFE87A5B}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>Manager</src-attribute>
+      <script-context>cd.person:Manager-&gt;mv.person:managerName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="streetNbr" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{28171A42-F559-4823-AA16-357446C3CF13}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrNbr</src-attribute>
+      <script-context>cd.person:OffAddStrNbr-&gt;mv.person:streetNbr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{F7B3886D-7161-4854-BA94-6C5A33960DBC}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrNbr</src-attribute>
+      <script-context>cd.person:OffAddStrNbr-&gt;mv.person:streetNbr</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="suburb" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{A43FA137-AD8E-4CC5-96CF-FEACE737D3A2}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddSuburb</src-attribute>
+      <script-context>cd.person:OffAddSuburb-&gt;mv.person:suburb</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{57DB49E7-2EA8-40E0-A596-DB575AC681FF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddSuburb</src-attribute>
+      <script-context>cd.person:OffAddSuburb-&gt;mv.person:suburb</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="street" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B5857DCA-7296-4B4D-9D5F-E91BFA07C198}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrName</src-attribute>
+      <script-context>cd.person:OffAddStrName-&gt;mv.person:street</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{6F19F130-7240-4719-A631-230478F807AD}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrName</src-attribute>
+      <script-context>cd.person:OffAddStrName-&gt;mv.person:street</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="IDNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{291DC8D2-45A6-49E3-B71E-124ADCF61560}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:IDNr-&gt;mv.person:IDNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{DC6C4FC2-3578-4E89-980A-D99119AF64EF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:IDNr-&gt;mv.person:IDNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="city" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{033AE778-B5E4-4595-A658-5FB0A4277D4B}">
+     <scripted-mapping>
+      <src-attribute>City</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:City-&gt;mv.person:city</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{E55AAD68-4EB0-43A7-8AA8-45D8A283EB1E}">
+     <scripted-mapping>
+      <src-attribute>City</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:City-&gt;mv.person:city</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="country" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{6C5F9FFA-E595-48BB-96B3-A31261A35B3C}">
+     <scripted-mapping>
+      <src-attribute>Country</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Country-&gt;mv.person:country</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{F0C7B90A-003D-4E94-9ADD-0AB3F089DF27}">
+     <scripted-mapping>
+      <src-attribute>Country</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Country-&gt;mv.person:country</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="postalCode" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B101FEC2-2AAB-4B69-B4E8-B56E5DFB0F08}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PostalCode</src-attribute>
+      <script-context>cd.person:PostalCode-&gt;mv.person:postalCode</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{B7439B24-62D8-433A-BA89-5059D6A9A144}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PostalCode</src-attribute>
+      <script-context>cd.person:PostalCode-&gt;mv.person:postalCode</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="region" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{6A842EC0-74F5-4B7E-A762-80F2D6D40BE8}">
+     <scripted-mapping>
+      <src-attribute>AddrRegion</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:AddrRegion-&gt;mv.person:region</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{32167AD8-C20A-4838-AC31-C4F48F5C446A}">
+     <scripted-mapping>
+      <src-attribute>AddrRegion</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:AddrRegion-&gt;mv.person:region</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="location" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{22DDAB4C-5417-44EF-A6F9-F751FA95F57F}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>GeoLocation</src-attribute>
+      <script-context>cd.person:GeoLocation-&gt;mv.person:location</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5975BD8C-233D-4988-9A1C-A3B7FE0835BE}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>GeoLocation</src-attribute>
+      <script-context>cd.person:GeoLocation-&gt;mv.person:location</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="facsimileTelephoneNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{ADAD16A4-F93F-40E8-A233-63418BCA89A0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneFax</src-attribute>
+      <script-context>cd.person:PhoneFax-&gt;mv.person:facsimileTelephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{EDCA60E0-B088-4591-9B5C-BB7B8E0FC558}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneFax</src-attribute>
+      <script-context>cd.person:PhoneFax-&gt;mv.person:facsimileTelephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mobile" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{245A28E6-0F19-4F38-AD82-3909BC63A2F5}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneMobile</src-attribute>
+      <script-context>cd.person:PhoneMobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{6A8A9C73-EE06-4291-9323-D8522EE04BBC}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneMobile</src-attribute>
+      <script-context>cd.person:PhoneMobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{5604455A-9548-4AEE-98D0-A6390FB28F05}">
+     <direct-mapping>
+      <src-attribute>MobilePhone</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{DB001018-94F1-482F-A916-9263BE226ABE}">
+     <scripted-mapping>
+      <src-attribute>mobile</src-attribute>
+      <script-context>cd.contact:mobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="telephoneNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{9EE0D299-5AC9-4D0D-803D-6EBAE8C29730}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneOffice</src-attribute>
+      <script-context>cd.person:PhoneOffice-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{03CF1410-338E-4C11-A40D-6EE7AA4E163E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneOffice</src-attribute>
+      <script-context>cd.person:PhoneOffice-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{F10103CB-4224-4E68-8A23-8A286672E277}">
+     <scripted-mapping>
+      <src-attribute>telephoneNumber</src-attribute>
+      <script-context>cd.contact:telephoneNumber-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="jobTitle" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{E96C6FFA-C06F-4C95-8B39-F6B4CCB5415D}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>JobTitle</src-attribute>
+      <script-context>cd.person:JobTitle-&gt;mv.person:jobTitle</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{498352EC-1771-4594-8201-C260A7C710A8}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>JobTitle</src-attribute>
+      <script-context>cd.person:JobTitle-&gt;mv.person:jobTitle</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="department" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{572407E6-7E4D-4C95-AE23-6DAA8361F54F}">
+     <scripted-mapping>
+      <src-attribute>Department</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{EE090500-C9F9-4FC6-935F-7636EAE937E8}">
+     <scripted-mapping>
+      <src-attribute>Department</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{797313A7-E55B-4994-A8CB-BB7915113C5B}">
+     <scripted-mapping>
+      <src-attribute>department</src-attribute>
+      <script-context>cd.user:department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{9668F3C9-2C7A-40EE-A56C-D3FB0CB5E3A9}">
+     <scripted-mapping>
+      <src-attribute>department</src-attribute>
+      <script-context>cd.contact:department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="sn" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{A47382C7-CA52-4DDC-ACDD-5D259CE5AFFB}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <script-context>cd.person:LastName-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{B2F2E636-88E9-40C9-AE21-5819B44CD58C}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <script-context>cd.person:LastName-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{632B51EB-17AD-4DF8-9083-0F179C677D7B}">
+     <scripted-mapping>
+      <src-attribute>sn</src-attribute>
+      <script-context>cd.contact:sn-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D07D8F3C-A668-47D4-BB16-555D5971149B}">
+     <scripted-mapping>
+      <src-attribute>sn</src-attribute>
+      <script-context>cd.user:sn-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="fullName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{5DE808DF-8592-4EE2-8F24-882D3897FFF1}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>FirstName</src-attribute>
+      <script-context>cd.person:FirstName-&gt;mv.person:fullName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{860ED437-05E9-4C3E-98E0-123A4BC9F9AA}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>FirstName</src-attribute>
+      <script-context>cd.person:FirstName-&gt;mv.person:fullName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="nickName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{8C69EF0C-F514-4A6E-BB49-E02934478AB7}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:NickName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{3860DAA3-AE70-44C3-B595-F8348FA584E5}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:NickName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{18AC9E20-DAB8-4EC5-BDF7-67C01E4F0512}">
+     <scripted-mapping>
+      <src-attribute>givenName</src-attribute>
+      <script-context>cd.user:givenName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeEndDate" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{D80B8539-EA66-4456-88A2-2BD30399FC3B}">
+     <scripted-mapping>
+      <src-attribute>EmployeeEndDate</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeEndDate-&gt;mv.person:employeeEndDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{76AC3AAC-D07F-4205-95A6-5ED902D7F2E7}">
+     <scripted-mapping>
+      <src-attribute>EmployeeEndDate</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeEndDate-&gt;mv.person:employeeEndDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeStartDate" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{66208BA7-2A29-4C3F-9E29-D69778659E9E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <script-context>cd.person:EmployeeStartDate-&gt;mv.person:employeeStartDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5C665A06-4CF5-4197-83E9-22CEC54C14DF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <script-context>cd.person:EmployeeStartDate-&gt;mv.person:employeeStartDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{9D42E496-D819-41E5-9D6D-8EBE801A8D08}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRulesList" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{825F904C-D372-4492-8A34-E04B8B3BB771}">
+     <direct-mapping>
+      <src-attribute>ExpectedRulesList</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{82E77563-17FA-4F9A-B01B-BF3FB81B8344}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:LastName,NickName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5423CE91-CF7A-4393-A997-1D64E67CE6BD}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:LastName,NickName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{2A220E56-79FE-405E-B623-B7EC1E6ACD1B}">
+     <scripted-mapping>
+      <src-attribute>displayName</src-attribute>
+      <script-context>cd.contact:displayName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{40CDC0B4-E8D6-470D-A0C2-78F35F97BBE9}">
+     <scripted-mapping>
+      <src-attribute>displayName</src-attribute>
+      <script-context>cd.user:displayName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeType" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{DB37416E-AA63-4239-910E-5495E4FFE9C0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <script-context>cd.person:EmployeeType-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{9FFB3987-679D-48CB-9819-9DA43342B801}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <script-context>cd.person:EmployeeType-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{69D4BC8A-1B5F-4FC4-8FC8-D69484D61158}">
+     <scripted-mapping>
+      <script-context>cd.contact:-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mail" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{3C24DE61-D6EA-457C-B33B-ED67116286C3}">
+     <direct-mapping>
+      <src-attribute>mail</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{1B3E86B3-024B-4B64-B64C-47D45FCB10F9}">
+     <direct-mapping>
+      <src-attribute>mail</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="objectSid" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{B1247087-5947-43AE-9680-D67244F650BA}">
+     <direct-mapping>
+      <src-attribute>objectSid</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="accountName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{DF63091F-E0D1-49C7-90DC-AF3F2773B1EE}">
+     <direct-mapping>
+      <src-attribute>sAMAccountName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="domain" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{95E3778C-7E20-48DE-B0FE-646C1E5B2CBC}">
+     <constant-mapping>
+      <constant-value>africa</constant-value>
+     </constant-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{15FEB625-22AB-4624-A281-E730270D2E7A}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{241AEB65-1B17-4DA5-A672-0BB4C252FE25}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{381A5982-C3AD-4EF7-88A2-5677E5B8129E}">
+     <scripted-mapping>
+      <src-attribute>employeeNumber</src-attribute>
+      <script-context>cd.user:employeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeNr" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B09A226B-60E4-4AC8-91C5-DDFC5CEC2FC0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{84C206E5-22F4-493E-B4E1-E01C8C9C3516}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{E2D1800C-41EF-4F0C-B690-3BCCBD401921}">
+     <scripted-mapping>
+      <src-attribute>employeeNumber</src-attribute>
+      <script-context>cd.user:employeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeStatus" type="manual">
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5ED4591C-0222-4E0C-9165-BB5EF05337DB}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <script-context>cd.person:EmplStatus-&gt;mv.person:employeeStatus</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{49994933-0F65-468D-9198-3F2A3B6B343E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <script-context>cd.person:EmplStatus-&gt;mv.person:employeeStatus</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="manager" type="ranked">
+    <import-flow src-ma="{7EAA0112-59AD-476C-8458-170B8F1A5EF0}" cd-object-type="position" id="{8C3DF42C-CFA3-4178-819C-D6986E4D73A8}">
+     <direct-mapping>
+      <src-attribute>manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{F67AF20C-10AE-47C6-BC7F-7063B9F4BE55}">
+     <direct-mapping>
+      <src-attribute>manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="DOB" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{F6045295-393B-4981-A25C-7F18B488A366}">
+     <direct-mapping>
+      <src-attribute>DOB</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{27586582-12D9-492B-A419-1C277F0BF6B0}">
+     <direct-mapping>
+      <src-attribute>DOB</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <per-ma-options>
+   <ma-options ma-id="{7EAA0112-59AD-476C-8458-170B8F1A5EF0}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{05BB23DA-520E-4642-8183-0BA5AFF83119}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{B763605A-B93C-405F-9930-67DEBD73D18B}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+  </per-ma-options>
+ </import-attribute-flow>
+</mv-data>
+
+</export-ma>

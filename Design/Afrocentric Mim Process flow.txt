@@ -1,0 +1,60 @@
+1. Executive Summary 
+This document describes the account management processes with specific reference to the implementation of MIM to automate management tasks.  This is a second draft for review.   
+Due to several missing dependencies the processes below have been adjusted to align with processes and procedures that are currently in use.  The MIM implementation will be closer to a like-for-like of the current solution with the added benefit that it can be maintained as changes to the business processes are required. 
+Dependencies and gaps that need to be addressed include: 
+1.	Inaccessible HR data for existing manual processes such as suspensions. 
+2.	Unknown adoption state of Human Capital using additional assignment values in Imbumba (i.e. when a user is suspended or is on maternity leave etc.) 
+3.	Unusable company data – entity names to not map to companies in the AD OU structure.  Data cannot be used to auto-locate a user in the correct OU. 
+The technical detail contained within represents the functional and technical requirements that will be implemented. 
+	
+	2. 	Processes 
+The processes below are based on a combined view of Oracle EBS and the Contingent Worker DB.  This is referred to as the User Verification View. 
+This view has some significant benefits when it comes to the manager field.  Manager is a reference to another existing record in the same source, so the combined view allows for typical exceptions where a contractor may be the manager of a permanent employee and vice versa.  
+This view does not support updates, but updates of telephone number and email are required to be written back to both Oracle EBS and the Contingent Worker DB.  For this reason, updates of these attributes will be written to these sources directly from MIM.  These updated values will reflect in the User Verification View. 
+
+Primary business logic managing whether an account is enabled/disabled, provisioned/not provisioned is based on the following data fields in the User Verification View: 
+●	Employee Start Date 
+●	Employee End Date 
+●	Employee Status (Active/Terminated) 
+Notes:   
+●	Notification is referred to within the processes below.  Currently this is an email to the UAA team as the service management platform does not support programmatic tickets.  In future, this notification may change to ticket logging.  It is understood that AfroCentric is in the process of changing to a new service desk platform. 
+●	User Tagging refers to setting a value on a user attribute to inform MIM of some action.  For example, when an account is disabled due to long leave, but it must actually be enabled.  Even though MIM would normally disable the account because of the business rule, an attribute value can act as an override to cater for exceptions. 
+	
+	2.1. 	New User Provisioning (Normal Users) 
+This process applies to normal user accounts.  Provisioning of admin accounts will be addressed as a future phase of the IDM project. 
+●	New employees start with an employee record either added to Oracle EBS or the Contingent Workers database. 
+●	Accounts will automatically be created in the Staging OU 
+●	UAA team will be notified by email when a new account is created. 
+●	Manual tasks include setting configuring printer pins, access to Imbumba and other applications that do not support windows authentication and PC setup.  A ticket is logged and moved around to follow this process. 
+	2.2. 	Termination 
+Termination refers to people that resign and work out a notice period. 
+● To prevent MIM from re-enabling this account, update the tag attribute to indicate that this account has been manually suspended. 
+	2.4. 	Re-hires and Role Changes 
+Current business rule:  If a new employee number is issued, a new account will be created.  The old account will be terminated in HR and follow the termination process.  Any data migration (mail etc.) from the old account will be handled as an exception via service request.  
+	2.5. 	Long Leave 
+The long leave process applies to all extended absence from work such as maternity leave, disability, etc.   
+Long Leave will be handed by the inactive user account process. 
+	2.6. 	Inactive User Accounts 
+●	Unused accounts will be disabled if inactive for a configurable period of time in days.  This is based on the lastLogonTimestamp of an AD account. 
+●	Enabling an inactive account may require HR authorization and a request to be logged 
+●	Once enabled by UAA, the next MIM sync will disable the account again.  This will be addressed by tagging a user attribute and MIM will leave the account enabled for a configurable period of time. 
+ 
+User Account Tagging 
+User “tagging” is required to override default MIM configured behaviour.  Such as when an account is disabled due to suspension, MIM should not re-enable this account. 
+The recommended tag attribute is extensionAttribute1. 
+The following values are anticipated: 
+Tag Value 	Set By 	Description 
+ 
+Suspended 	UAA 	Used to notify MIM that the account should be in a disabled state regardless of the HR status. 
+Reactivate 	UAA 	When an inactive account needs to be reactivated, MIM will enable the account regardless of the lastLogonTimestamp and will provide a duration of 24 hours for a successful login after which this value will be cleared. 
+
+Manual Access & Other Services 
+The following components are manual tasks that must be completed by the UAA team: 
+●	Access (Group Membership) 
+●	O365 license assignments 
+●	Mailbox creation 
+●	1Telephone number update 
+●	Printer PIN configuration 
+●	PC/Laptop setup 
+Notes: 
+1Telephone number is currently manually captured in AD after assigning a telephone number in Avaya.  This is prone to human error and inconsistencies.  The TMS system needs to be investigated as a data source.  This may be a phase 2 requirement if a query able source does not exist that includes telephone number and some user indicator. 

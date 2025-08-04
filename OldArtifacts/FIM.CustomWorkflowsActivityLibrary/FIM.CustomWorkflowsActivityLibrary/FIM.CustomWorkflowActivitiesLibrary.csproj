@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8C57184-203E-4755-86F8-9481B928F2D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FIM.CustomWorkflowActivitiesLibrary</RootNamespace>
+    <AssemblyName>FIM.CustomActivitiesLibrary</AssemblyName>
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FIM.CustomActivityLibrary.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityManagement.WebUI.Controls, Version=4.1.2273.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Forefront Identity Manager\2010\Portal\Microsoft.IdentityManagement.WebUI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityManagement.WFExtensionInterfaces, Version=4.1.2273.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Forefront Identity Manager\2010\Portal\Microsoft.IdentityManagement.WFExtensionInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ResourceManagement, Version=4.1.2273.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Forefront Identity Manager\2010\Service\Microsoft.ResourceManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\WebUIs\ChangeActorId\ChangeActorId.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Activities\WebUIs\ChangeActorId\ChangeActorId.Designer.cs">
+      <DependentUpon>ChangeActorId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\WebUIs\RequestLoggingActivity\RequestLoggingActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Activities\WebUIs\RequestLoggingActivity\RequestLoggingActivity.Designer.cs">
+      <DependentUpon>RequestLoggingActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeActorIDActivitySettingsPart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RequestLoggingActivitySettingsPart.cs" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="FIM.CustomActivityLibrary.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildToolsPath)\Workflow.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\gacutil.exe" /i "$(TargetPath)"
+net stop "Forefront Identity Manager Service"
+net start "Forefront Identity Manager Service"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

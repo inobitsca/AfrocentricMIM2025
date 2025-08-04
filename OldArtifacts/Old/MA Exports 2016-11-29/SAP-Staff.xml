@@ -1,0 +1,1191 @@
+<export-ma server='FIMMIDV01' export-date='2016-11-29 09:50:30.434'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{B763605A-B93C-405F-9930-67DEBD73D18B}</id>
+ <name>sap sql hr - staff</name>
+ <category>MSSQL</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2013-03-05 07:45:20.423</creation-time>
+ <last-modification-time>2016-04-06 14:51:46.580</last-modification-time>
+ <version>76</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="person" type="structural"><dsml:name>person</dsml:name><dsml:attribute ref="#EmplStatus" required="false" /><dsml:attribute ref="#EmployeeNumber" required="false" /><dsml:attribute ref="#EmployeeStartDate" required="false" /><dsml:attribute ref="#EmployeeEndDate" required="false" /><dsml:attribute ref="#NickName" required="false" /><dsml:attribute ref="#FirstName" required="false" /><dsml:attribute ref="#LastName" required="false" /><dsml:attribute ref="#Department" required="false" /><dsml:attribute ref="#EmployeeType" required="false" /><dsml:attribute ref="#JobTitle" required="false" /><dsml:attribute ref="#ManagerPernr" required="false" /><dsml:attribute ref="#Manager" required="false" /><dsml:attribute ref="#PhoneOffice" required="false" /><dsml:attribute ref="#PhoneIntOffice" required="false" /><dsml:attribute ref="#PhoneMobile" required="false" /><dsml:attribute ref="#PhoneFax" required="false" /><dsml:attribute ref="#GeoLocation" required="false" /><dsml:attribute ref="#AddrRegion" required="false" /><dsml:attribute ref="#PostalCode" required="false" /><dsml:attribute ref="#Country" required="false" /><dsml:attribute ref="#City" required="false" /><dsml:attribute ref="#SamAccount" required="false" /><dsml:attribute ref="#IDNr" required="false" /><dsml:attribute ref="#OffAddStrNbr" required="false" /><dsml:attribute ref="#OffAddStrName" required="false" /><dsml:attribute ref="#OffAddSuburb" required="false" /><dsml:attribute ref="#DOB" required="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="EmplStatus" single-value="true"><dsml:name>EmplStatus</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeNumber" single-value="true" ms-dsml:immutable="true" ms-dsml:range-upper="2147483647" ms-dsml:range-lower="-2147483648"><dsml:name>EmployeeNumber</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeStartDate" single-value="true" ms-dsml:range-upper="16"><dsml:name>EmployeeStartDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeEndDate" single-value="true" ms-dsml:range-upper="16"><dsml:name>EmployeeEndDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NickName" single-value="true" user-modification="false" ms-dsml:range-upper="50"><dsml:name>NickName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FirstName" single-value="true" ms-dsml:range-upper="40"><dsml:name>FirstName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="LastName" single-value="true" ms-dsml:range-upper="40"><dsml:name>LastName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Department" single-value="true" ms-dsml:range-upper="40"><dsml:name>Department</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EmployeeType" single-value="true" ms-dsml:range-upper="40"><dsml:name>EmployeeType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="JobTitle" single-value="true" ms-dsml:range-upper="50"><dsml:name>JobTitle</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ManagerPernr" single-value="true" ms-dsml:range-upper="2147483647" ms-dsml:range-lower="-2147483648"><dsml:name>ManagerPernr</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Manager" single-value="true" ms-dsml:range-upper="100"><dsml:name>Manager</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PhoneOffice" single-value="true" ms-dsml:range-upper="30"><dsml:name>PhoneOffice</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PhoneIntOffice" single-value="true" ms-dsml:range-upper="30"><dsml:name>PhoneIntOffice</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PhoneMobile" single-value="true" ms-dsml:range-upper="30"><dsml:name>PhoneMobile</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PhoneFax" single-value="true" ms-dsml:range-upper="30"><dsml:name>PhoneFax</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="GeoLocation" single-value="true" ms-dsml:range-upper="50"><dsml:name>GeoLocation</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AddrRegion" single-value="true" ms-dsml:range-upper="30"><dsml:name>AddrRegion</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PostalCode" single-value="true" ms-dsml:range-upper="10"><dsml:name>PostalCode</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Country" single-value="true" ms-dsml:range-upper="15"><dsml:name>Country</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="City" single-value="true" ms-dsml:range-upper="40"><dsml:name>City</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SamAccount" single-value="true" ms-dsml:range-upper="100"><dsml:name>SamAccount</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="IDNr" single-value="true" ms-dsml:range-upper="13"><dsml:name>IDNr</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OffAddStrNbr" single-value="true" ms-dsml:range-upper="10"><dsml:name>OffAddStrNbr</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OffAddStrName" single-value="true" ms-dsml:range-upper="60"><dsml:name>OffAddStrName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OffAddSuburb" single-value="true" ms-dsml:range-upper="40"><dsml:name>OffAddSuburb</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DOB" single-value="true" user-modification="false" ms-dsml:range-upper="16"><dsml:name>DOB</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>EmplStatus</attribute><attribute>EmployeeNumber</attribute><attribute>EmployeeStartDate</attribute><attribute>EmployeeEndDate</attribute><attribute>NickName</attribute><attribute>FirstName</attribute><attribute>LastName</attribute><attribute>Department</attribute><attribute>EmployeeType</attribute><attribute>JobTitle</attribute><attribute>ManagerPernr</attribute><attribute>Manager</attribute><attribute>PhoneOffice</attribute><attribute>PhoneIntOffice</attribute><attribute>PhoneMobile</attribute><attribute>PhoneFax</attribute><attribute>GeoLocation</attribute><attribute>AddrRegion</attribute><attribute>PostalCode</attribute><attribute>Country</attribute><attribute>City</attribute><attribute>SamAccount</attribute><attribute>IDNr</attribute><attribute>OffAddStrNbr</attribute><attribute>OffAddStrName</attribute><attribute>OffAddSuburb</attribute><attribute>DOB</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector><filter-set import-filter="0" cd-object-type="person" type="declared"><filter-alternative id="{887C70A3-408C-4A87-AD57-C511C16DFDA8}"><condition cd-attribute="EmployeeType" operator="substring-start"><value>Labour Broker</value></condition></filter-alternative></filter-set></stay-disconnector>
+ <join><join-profile cd-object-type="person"><join-criterion id="{C1C0DE4E-9E38-49D8-897B-017E2D9285FC}"><search><attribute-mapping mv-attribute="IDNumber"><direct-mapping><src-attribute>IDNr</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion><join-criterion id="{0CC1079E-03CF-40E0-8513-7F63E9D9CCE0}"><search><attribute-mapping mv-attribute="employeeNr"><direct-mapping><src-attribute>EmployeeNumber</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile></join>
+ <projection><class-mapping type="declared" id="{C1D248F4-C5A4-4C11-B28E-226C691596D8}" cd-object-type="person"><mv-object-type>person</mv-object-type></class-mapping></projection>
+ <export-attribute-flow />
+ <provisioning-cleanup type="declared"><action>make-normal-disconnector</action></provisioning-cleanup>
+ <extension><assembly-name>sap sql hrExtension.dll</assembly-name><application-protection>low</application-protection></extension>
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+ <impersonation>
+  <domain>africa</domain>
+  <user>svc-fim-ma</user>
+ </impersonation>
+</controller-configuration>
+
+ <description>HR Records</description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="EmployeeNumber" header="EmployeeNumber" size="100" /><attribute name="EmplStatus" header="EmplStatus" size="100" /><attribute name="EmployeeStartDate" header="EmployeeStartDate" size="142" /></cs><mv /></attributes><filters max_mv_search_results="" /></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <oledbma-configuration><connection-info><authentication>integrated</authentication><provider>SQLOLEDB</provider><server>webintsqlmidv01</server><databasename>bcxsdb</databasename><tablename>vGetAllEmployee_AD</tablename><user>svc-fim-ma</user><domain>africa</domain></connection-info><mms-info><column-info><column><name>EmplStatus</name><data-type>DBTYPE_BOOL</data-type><length>2</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>Bool</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>EmployeeNumber</name><data-type>DBTYPE_I4</data-type><length>4</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>Number</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>EmployeeStartDate</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>EmployeeEndDate</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>NickName</name><data-type>DBTYPE_STR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>FirstName</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>LastName</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Department</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>EmployeeType</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>JobTitle</name><data-type>DBTYPE_STR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ManagerPernr</name><data-type>DBTYPE_I4</data-type><length>4</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>Number</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Manager</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PhoneOffice</name><data-type>DBTYPE_STR</data-type><length>30</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PhoneIntOffice</name><data-type>DBTYPE_STR</data-type><length>30</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PhoneMobile</name><data-type>DBTYPE_STR</data-type><length>30</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PhoneFax</name><data-type>DBTYPE_STR</data-type><length>30</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>GeoLocation</name><data-type>DBTYPE_STR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>AddrRegion</name><data-type>DBTYPE_STR</data-type><length>30</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PostalCode</name><data-type>DBTYPE_STR</data-type><length>10</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Country</name><data-type>DBTYPE_STR</data-type><length>15</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>City</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>SamAccount</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>IDNr</name><data-type>DBTYPE_STR</data-type><length>13</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>OffAddStrNbr</name><data-type>DBTYPE_STR</data-type><length>10</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>OffAddStrName</name><data-type>DBTYPE_STR</data-type><length>60</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>OffAddSuburb</name><data-type>DBTYPE_STR</data-type><length>40</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>DOB</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><primary-key></primary-key></column-info><anchor><attribute>EmployeeNumber</attribute></anchor><object-type>person</object-type></mms-info><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><enable-unapplied-merge>0</enable-unapplied-merge></oledbma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{246CC685-24B6-4AC4-85A5-83E17AE6DD3E}</id>
+  <name>default</name>
+  <creation-time>2013-03-05 07:45:20.423</creation-time>
+  <last-modification-time>2016-04-06 14:51:46.580</last-modification-time>
+  <version>77</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>27</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>person</name>
+     <hierarchy>
+      <object-class>person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{059B4FC7-8F33-462C-A984-B3086D73CBF2}</id>
+  <name>full sync</name>
+  <creation-time>2013-03-11 10:13:09.073</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-11 10:13:09.073</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{246CC685-24B6-4AC4-85A5-83E17AE6DD3E}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{C81B2EF6-7241-4C9C-A2B1-C9955922F910}</id>
+  <name>full import, full sync</name>
+  <creation-time>2013-03-13 08:28:32.340</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-13 08:28:32.340</last-modification-time>
+  <configuration><step><step-type type="full-import-reevaluate-rules"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{246CC685-24B6-4AC4-85A5-83E17AE6DD3E}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{7C5CE1B6-6037-42C1-A58E-39ACEE7694C3}</id>
+  <name>full import</name>
+  <creation-time>2013-03-05 07:45:51.983</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-05 07:45:51.983</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{246CC685-24B6-4AC4-85A5-83E17AE6DD3E}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{1B452F46-3D8E-4E13-861F-FBBF76EA9D1A}</id>
+  <name>full import, delta sync</name>
+  <creation-time>2013-03-13 08:28:32.343</creation-time>
+  <version>1</version>
+  <last-modification-time>2013-03-13 08:28:32.343</last-modification-time>
+  <configuration><step><step-type type="full-import"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{246CC685-24B6-4AC4-85A5-83E17AE6DD3E}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>8401</capabilities-mask>
+ <export-type>2</export-type>
+ <dn-construction><attribute>EmployeeNumber</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+<mv-data>
+ <import-attribute-flow>
+  <import-flow-set mv-object-type="person">
+   <import-flows mv-attribute="DOB" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{F6045295-393B-4981-A25C-7F18B488A366}">
+     <direct-mapping>
+      <src-attribute>DOB</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{27586582-12D9-492B-A419-1C277F0BF6B0}">
+     <direct-mapping>
+      <src-attribute>DOB</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="manager" type="ranked">
+    <import-flow src-ma="{7EAA0112-59AD-476C-8458-170B8F1A5EF0}" cd-object-type="position" id="{8C3DF42C-CFA3-4178-819C-D6986E4D73A8}">
+     <direct-mapping>
+      <src-attribute>manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{F67AF20C-10AE-47C6-BC7F-7063B9F4BE55}">
+     <direct-mapping>
+      <src-attribute>manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeStatus" type="manual">
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5ED4591C-0222-4E0C-9165-BB5EF05337DB}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <script-context>cd.person:EmplStatus-&gt;mv.person:employeeStatus</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{49994933-0F65-468D-9198-3F2A3B6B343E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <script-context>cd.person:EmplStatus-&gt;mv.person:employeeStatus</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeNr" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B09A226B-60E4-4AC8-91C5-DDFC5CEC2FC0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{84C206E5-22F4-493E-B4E1-E01C8C9C3516}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{E2D1800C-41EF-4F0C-B690-3BCCBD401921}">
+     <scripted-mapping>
+      <src-attribute>employeeNumber</src-attribute>
+      <script-context>cd.user:employeeNumber-&gt;mv.person:employeeNr</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{15FEB625-22AB-4624-A281-E730270D2E7A}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{241AEB65-1B17-4DA5-A672-0BB4C252FE25}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <src-attribute>EmplStatus</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{381A5982-C3AD-4EF7-88A2-5677E5B8129E}">
+     <scripted-mapping>
+      <src-attribute>employeeNumber</src-attribute>
+      <script-context>cd.user:employeeNumber-&gt;mv.person:employeeNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="domain" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{95E3778C-7E20-48DE-B0FE-646C1E5B2CBC}">
+     <constant-mapping>
+      <constant-value>africa</constant-value>
+     </constant-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="accountName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{DF63091F-E0D1-49C7-90DC-AF3F2773B1EE}">
+     <direct-mapping>
+      <src-attribute>sAMAccountName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="objectSid" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{B1247087-5947-43AE-9680-D67244F650BA}">
+     <direct-mapping>
+      <src-attribute>objectSid</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mail" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{3C24DE61-D6EA-457C-B33B-ED67116286C3}">
+     <direct-mapping>
+      <src-attribute>mail</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{1B3E86B3-024B-4B64-B64C-47D45FCB10F9}">
+     <direct-mapping>
+      <src-attribute>mail</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeType" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{DB37416E-AA63-4239-910E-5495E4FFE9C0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <script-context>cd.person:EmployeeType-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{9FFB3987-679D-48CB-9819-9DA43342B801}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeType</src-attribute>
+      <script-context>cd.person:EmployeeType-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{69D4BC8A-1B5F-4FC4-8FC8-D69484D61158}">
+     <scripted-mapping>
+      <script-context>cd.contact:-&gt;mv.person:employeeType</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{82E77563-17FA-4F9A-B01B-BF3FB81B8344}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:LastName,NickName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5423CE91-CF7A-4393-A997-1D64E67CE6BD}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:LastName,NickName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{2A220E56-79FE-405E-B623-B7EC1E6ACD1B}">
+     <scripted-mapping>
+      <src-attribute>displayName</src-attribute>
+      <script-context>cd.contact:displayName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{40CDC0B4-E8D6-470D-A0C2-78F35F97BBE9}">
+     <scripted-mapping>
+      <src-attribute>displayName</src-attribute>
+      <script-context>cd.user:displayName-&gt;mv.person:displayName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRulesList" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{825F904C-D372-4492-8A34-E04B8B3BB771}">
+     <direct-mapping>
+      <src-attribute>ExpectedRulesList</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{9D42E496-D819-41E5-9D6D-8EBE801A8D08}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeStartDate" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{66208BA7-2A29-4C3F-9E29-D69778659E9E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <script-context>cd.person:EmployeeStartDate-&gt;mv.person:employeeStartDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5C665A06-4CF5-4197-83E9-22CEC54C14DF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>EmployeeStartDate</src-attribute>
+      <script-context>cd.person:EmployeeStartDate-&gt;mv.person:employeeStartDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="employeeEndDate" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{D80B8539-EA66-4456-88A2-2BD30399FC3B}">
+     <scripted-mapping>
+      <src-attribute>EmployeeEndDate</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeEndDate-&gt;mv.person:employeeEndDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{76AC3AAC-D07F-4205-95A6-5ED902D7F2E7}">
+     <scripted-mapping>
+      <src-attribute>EmployeeEndDate</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeEndDate-&gt;mv.person:employeeEndDate</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="nickName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{8C69EF0C-F514-4A6E-BB49-E02934478AB7}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:NickName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{3860DAA3-AE70-44C3-B595-F8348FA584E5}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>NickName</src-attribute>
+      <script-context>cd.person:NickName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{18AC9E20-DAB8-4EC5-BDF7-67C01E4F0512}">
+     <scripted-mapping>
+      <src-attribute>givenName</src-attribute>
+      <script-context>cd.user:givenName-&gt;mv.person:nickName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="fullName" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{5DE808DF-8592-4EE2-8F24-882D3897FFF1}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>FirstName</src-attribute>
+      <script-context>cd.person:FirstName-&gt;mv.person:fullName</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{860ED437-05E9-4C3E-98E0-123A4BC9F9AA}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>FirstName</src-attribute>
+      <script-context>cd.person:FirstName-&gt;mv.person:fullName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="sn" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{A47382C7-CA52-4DDC-ACDD-5D259CE5AFFB}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <script-context>cd.person:LastName-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{B2F2E636-88E9-40C9-AE21-5819B44CD58C}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>LastName</src-attribute>
+      <script-context>cd.person:LastName-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{632B51EB-17AD-4DF8-9083-0F179C677D7B}">
+     <scripted-mapping>
+      <src-attribute>sn</src-attribute>
+      <script-context>cd.contact:sn-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D07D8F3C-A668-47D4-BB16-555D5971149B}">
+     <scripted-mapping>
+      <src-attribute>sn</src-attribute>
+      <script-context>cd.user:sn-&gt;mv.person:sn</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="department" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{572407E6-7E4D-4C95-AE23-6DAA8361F54F}">
+     <scripted-mapping>
+      <src-attribute>Department</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{EE090500-C9F9-4FC6-935F-7636EAE937E8}">
+     <scripted-mapping>
+      <src-attribute>Department</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{797313A7-E55B-4994-A8CB-BB7915113C5B}">
+     <scripted-mapping>
+      <src-attribute>department</src-attribute>
+      <script-context>cd.user:department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{9668F3C9-2C7A-40EE-A56C-D3FB0CB5E3A9}">
+     <scripted-mapping>
+      <src-attribute>department</src-attribute>
+      <script-context>cd.contact:department-&gt;mv.person:department</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="jobTitle" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{E96C6FFA-C06F-4C95-8B39-F6B4CCB5415D}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>JobTitle</src-attribute>
+      <script-context>cd.person:JobTitle-&gt;mv.person:jobTitle</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{498352EC-1771-4594-8201-C260A7C710A8}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>JobTitle</src-attribute>
+      <script-context>cd.person:JobTitle-&gt;mv.person:jobTitle</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="telephoneNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{9EE0D299-5AC9-4D0D-803D-6EBAE8C29730}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneOffice</src-attribute>
+      <script-context>cd.person:PhoneOffice-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{03CF1410-338E-4C11-A40D-6EE7AA4E163E}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneOffice</src-attribute>
+      <script-context>cd.person:PhoneOffice-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{F10103CB-4224-4E68-8A23-8A286672E277}">
+     <scripted-mapping>
+      <src-attribute>telephoneNumber</src-attribute>
+      <script-context>cd.contact:telephoneNumber-&gt;mv.person:telephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mobile" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{245A28E6-0F19-4F38-AD82-3909BC63A2F5}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneMobile</src-attribute>
+      <script-context>cd.person:PhoneMobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{6A8A9C73-EE06-4291-9323-D8522EE04BBC}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneMobile</src-attribute>
+      <script-context>cd.person:PhoneMobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{5604455A-9548-4AEE-98D0-A6390FB28F05}">
+     <direct-mapping>
+      <src-attribute>MobilePhone</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{DB001018-94F1-482F-A916-9263BE226ABE}">
+     <scripted-mapping>
+      <src-attribute>mobile</src-attribute>
+      <script-context>cd.contact:mobile-&gt;mv.person:mobile</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="facsimileTelephoneNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{ADAD16A4-F93F-40E8-A233-63418BCA89A0}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneFax</src-attribute>
+      <script-context>cd.person:PhoneFax-&gt;mv.person:facsimileTelephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{EDCA60E0-B088-4591-9B5C-BB7B8E0FC558}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneFax</src-attribute>
+      <script-context>cd.person:PhoneFax-&gt;mv.person:facsimileTelephoneNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="location" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{22DDAB4C-5417-44EF-A6F9-F751FA95F57F}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>GeoLocation</src-attribute>
+      <script-context>cd.person:GeoLocation-&gt;mv.person:location</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5975BD8C-233D-4988-9A1C-A3B7FE0835BE}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>GeoLocation</src-attribute>
+      <script-context>cd.person:GeoLocation-&gt;mv.person:location</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="region" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{6A842EC0-74F5-4B7E-A762-80F2D6D40BE8}">
+     <scripted-mapping>
+      <src-attribute>AddrRegion</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:AddrRegion-&gt;mv.person:region</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{32167AD8-C20A-4838-AC31-C4F48F5C446A}">
+     <scripted-mapping>
+      <src-attribute>AddrRegion</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:AddrRegion-&gt;mv.person:region</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="postalCode" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B101FEC2-2AAB-4B69-B4E8-B56E5DFB0F08}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PostalCode</src-attribute>
+      <script-context>cd.person:PostalCode-&gt;mv.person:postalCode</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{B7439B24-62D8-433A-BA89-5059D6A9A144}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PostalCode</src-attribute>
+      <script-context>cd.person:PostalCode-&gt;mv.person:postalCode</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="country" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{6C5F9FFA-E595-48BB-96B3-A31261A35B3C}">
+     <scripted-mapping>
+      <src-attribute>Country</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Country-&gt;mv.person:country</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{F0C7B90A-003D-4E94-9ADD-0AB3F089DF27}">
+     <scripted-mapping>
+      <src-attribute>Country</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:Country-&gt;mv.person:country</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="city" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{033AE778-B5E4-4595-A658-5FB0A4277D4B}">
+     <scripted-mapping>
+      <src-attribute>City</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:City-&gt;mv.person:city</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{E55AAD68-4EB0-43A7-8AA8-45D8A283EB1E}">
+     <scripted-mapping>
+      <src-attribute>City</src-attribute>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:City-&gt;mv.person:city</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="IDNumber" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{291DC8D2-45A6-49E3-B71E-124ADCF61560}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:IDNr-&gt;mv.person:IDNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{DC6C4FC2-3578-4E89-980A-D99119AF64EF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>IDNr</src-attribute>
+      <script-context>cd.person:IDNr-&gt;mv.person:IDNumber</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="street" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B5857DCA-7296-4B4D-9D5F-E91BFA07C198}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrName</src-attribute>
+      <script-context>cd.person:OffAddStrName-&gt;mv.person:street</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{6F19F130-7240-4719-A631-230478F807AD}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrName</src-attribute>
+      <script-context>cd.person:OffAddStrName-&gt;mv.person:street</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="suburb" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{A43FA137-AD8E-4CC5-96CF-FEACE737D3A2}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddSuburb</src-attribute>
+      <script-context>cd.person:OffAddSuburb-&gt;mv.person:suburb</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{57DB49E7-2EA8-40E0-A596-DB575AC681FF}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddSuburb</src-attribute>
+      <script-context>cd.person:OffAddSuburb-&gt;mv.person:suburb</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="streetNbr" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{28171A42-F559-4823-AA16-357446C3CF13}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrNbr</src-attribute>
+      <script-context>cd.person:OffAddStrNbr-&gt;mv.person:streetNbr</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{F7B3886D-7161-4854-BA94-6C5A33960DBC}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>OffAddStrNbr</src-attribute>
+      <script-context>cd.person:OffAddStrNbr-&gt;mv.person:streetNbr</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="managerName" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{116F78B0-3DC2-45C4-818E-3EF4261C6EBE}">
+     <direct-mapping>
+      <src-attribute>Manager</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{96947C46-7F7F-4141-AF58-F735FFE87A5B}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>Manager</src-attribute>
+      <script-context>cd.person:Manager-&gt;mv.person:managerName</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mailNickname" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{B6E79E4C-C322-4D28-8F41-D1C2C5DEFE12}">
+     <direct-mapping>
+      <src-attribute>mailNickname</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="name" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{469DAF40-20B2-4732-800C-9E4283F61646}">
+     <direct-mapping>
+      <src-attribute>name</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="cn" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D310669C-AB70-483F-B352-7569E24ACB90}">
+     <direct-mapping>
+      <src-attribute>cn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="dn" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="user" id="{D729AF6D-8F54-4B30-9C89-34F3D73A13B6}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ProvisionApproval" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{139E024C-3EC7-459C-9D6F-F27307F3FC40}">
+     <direct-mapping>
+      <src-attribute>ProvisionRequest</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ProvisionRequestAD" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Person" id="{86D3251E-07DA-46FE-B33D-C9278C6C6A2E}">
+     <direct-mapping>
+      <src-attribute>ProvisionRequestAD</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{7DD56CBB-4314-496C-B383-1689EDEFD39F}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <script-context>cd.person:&lt;dn&gt;-&gt;mv.person:ProvisionRequestAD</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{5A3281F4-F1DA-4351-A52A-21C8DD8E8288}">
+     <scripted-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <script-context>cd.person:&lt;dn&gt;-&gt;mv.person:ProvisionRequestAD</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="company" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{FC2A233E-BE17-4D0D-A5B2-2202E1D56C07}">
+     <direct-mapping>
+      <src-attribute>company</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="description" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{9218BFF5-A694-4905-893D-4D46DBC41125}">
+     <direct-mapping>
+      <src-attribute>description</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="givenName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{B676F5D2-DBB5-44BB-A2D7-12639F0CC84D}">
+     <direct-mapping>
+      <src-attribute>givenName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="initials" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{B222ED6C-6E3F-4B11-810B-88BFE1EB5BA2}">
+     <direct-mapping>
+      <src-attribute>initials</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="physicalDeliveryOfficeName" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="contact" id="{8C64946E-DAE8-46B1-BB45-25508DA0C0F4}">
+     <direct-mapping>
+      <src-attribute>physicalDeliveryOfficeName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="hrSourceMA" type="ranked">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{DAD544EC-A73D-40D0-9BE4-7607D8892894}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:hrSourceMA</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{8F041A66-7936-4FBE-9AB2-B5A62EE46142}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <script-context>cd.person:EmployeeNumber-&gt;mv.person:hrSourceMA</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="superiorPosition" type="manual">
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{9DFEB85A-D64C-44BD-B3D9-A994D47A93FE}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>ManagerPernr</src-attribute>
+      <script-context>cd.person:ManagerPernr-&gt;mv.person:superiorPosition</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{BDC23E0E-0571-4298-9F9B-A0C121D5C359}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>ManagerPernr</src-attribute>
+      <script-context>cd.person:ManagerPernr-&gt;mv.person:superiorPosition</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="officeIntPhone" type="ranked">
+    <import-flow src-ma="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}" cd-object-type="person" id="{AFBA54AB-0221-4065-A8D9-005279E059B9}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneIntOffice</src-attribute>
+      <script-context>cd.person:PhoneIntOffice-&gt;mv.person:officeIntPhone</script-context>
+     </scripted-mapping>
+    </import-flow>
+    <import-flow src-ma="{B763605A-B93C-405F-9930-67DEBD73D18B}" cd-object-type="person" id="{B42C712D-D4E7-4644-99B2-0D08A433DF16}">
+     <scripted-mapping>
+      <src-attribute>EmployeeNumber</src-attribute>
+      <src-attribute>PhoneIntOffice</src-attribute>
+      <script-context>cd.person:PhoneIntOffice-&gt;mv.person:officeIntPhone</script-context>
+     </scripted-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="group">
+   <import-flows mv-attribute="objectSid" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{4F7E4E8D-EA93-4A4F-A675-0E9E9874D609}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{C2B87C5A-66AA-4796-841C-DA253AD91ECE}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>objectSid</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="domain" type="ranked">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{9C588C80-A0D2-4F70-9197-7DF0154AF240}">
+     <constant-mapping>
+      <constant-value>africa</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{1D206CEF-1C99-4A41-AA18-09E20F64D7A4}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{F913F992-477D-424A-BF8A-6CEE51A155C9}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute intrinsic="true">dn</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>dn</attr></src><dest>domain</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="Word" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="UpperCase" isCustomExpression="false"><arg>dn</arg></fn></arg><arg>"|"</arg><arg>" "</arg></fn></arg><arg>",DC="</arg><arg>"|"</arg></fn></arg><arg>2</arg><arg>"|"</arg></fn></arg><arg>"AFRICA"</arg></fn></arg><arg>"HQ"</arg><arg><fn id="Word" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="ReplaceString" isCustomExpression="false"><arg><fn id="UpperCase" isCustomExpression="false"><arg>dn</arg></fn></arg><arg>"|"</arg><arg>" "</arg></fn></arg><arg>",DC="</arg><arg>"|"</arg></fn></arg><arg>2</arg><arg>"|"</arg></fn></arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="membershipLocked" type="equal">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{A371952E-E96D-45D4-B4BD-55DA049F7F05}">
+     <constant-mapping>
+      <constant-value>0</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{FD02C924-4280-40D4-86EA-F19DEF2748C7}">
+     <sync-rule-mapping mapping-type="constant" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{21A2D923-889F-4E05-97AB-A61121697FA7}" initial-flow-only="false" is-existence-test="false">
+      <sync-rule-value>0</sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{F1C8843B-5666-477C-857A-BC2E6E7C359F}">
+     <direct-mapping>
+      <src-attribute>MembershipLocked</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="membershipAddWorkflow" type="equal">
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{C5C62CE6-7D09-46F7-B100-3B2E7967D4A2}">
+     <constant-mapping>
+      <constant-value>Owner Approval</constant-value>
+     </constant-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{17CF4A45-7FAB-450B-9A91-140BBDC6A8A3}">
+     <sync-rule-mapping mapping-type="constant" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{9BA0C5ED-D77F-4ACC-A53A-BEB5687641E7}" initial-flow-only="false" is-existence-test="false">
+      <sync-rule-value>Owner Approval</sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{7E868839-ED92-4007-BA38-167DF4F51595}">
+     <direct-mapping>
+      <src-attribute>MembershipAddWorkflow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="description" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{B8676848-1353-4625-993C-98989F021B22}">
+     <direct-mapping>
+      <src-attribute>Description</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="type" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{5B6AA29E-918B-4016-8E5E-519AA624D112}">
+     <direct-mapping>
+      <src-attribute>Type</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{DFEA0E3B-2EF7-41B2-B18C-13F216E5221A}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{66D34D98-55D0-4F66-9392-E5457D447DBC}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>groupType</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>groupType</attr></src><dest>type</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitOr" isCustomExpression="false"><arg>14</arg><arg>groupType</arg></fn></arg><arg>14</arg></fn></arg><arg>"Distribution"</arg><arg>"Security"</arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="scope" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{C2995A87-47C8-44FB-9EF1-2F482077110B}">
+     <direct-mapping>
+      <src-attribute>Scope</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{82CC33F2-8B72-4D0E-8603-495E1E9DBFC6}">
+     <sync-rule-mapping mapping-type="expression" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{0FF376F6-3512-47B3-B0D6-E8F6C4403E1B}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>groupType</src-attribute>
+      <sync-rule-value>
+       <import-flow><src><attr>groupType</attr></src><dest>scope</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitAnd" isCustomExpression="false"><arg>2</arg><arg>groupType</arg></fn></arg><arg>2</arg></fn></arg><arg>"Global"</arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg><fn id="BitAnd" isCustomExpression="false"><arg>4</arg><arg>groupType</arg></fn></arg><arg>4</arg></fn></arg><arg>"DomainLocal"</arg><arg>"Universal"</arg></fn></arg></fn></import-flow>
+      </sync-rule-value>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mail" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{D3A01346-7DAC-40E9-838A-63930963BB80}">
+     <direct-mapping>
+      <src-attribute>Email</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{29CBFE2A-E4EF-4950-B578-58D613EF42D6}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{AD63E1B9-A77E-41AE-9733-63CC32D1BB69}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>mail</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="member" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{2B8314C6-303C-43ED-A216-09E53FE80041}">
+     <direct-mapping>
+      <src-attribute>Member</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{6A637681-2ED2-4CB2-8258-39A1F2721ED1}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{60AF3E85-96C2-4B0D-9247-0862534C642E}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>member</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="mailNickname" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{0BEB39E2-E408-439E-93DA-6B365D331E71}">
+     <direct-mapping>
+      <src-attribute>MailNickname</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{A5776461-9460-4717-BA6B-DA0BAF6B7227}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{0AB2231A-4FB1-4773-B5E0-71502481045F}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>mailNickname</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{566F95A0-0082-46FC-A68F-3C799B6A3CC0}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{9FD0E7E3-AF6D-401E-94A5-F16A782ABA90}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{43F6427C-86F3-442E-9107-0C646ADA0556}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>name</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayedOwner" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{E9C24EC9-1B00-400A-9BFF-EF0170C69842}">
+     <direct-mapping>
+      <src-attribute>DisplayedOwner</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="accountName" type="equal">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{E505A57A-6C04-4C5F-BD84-A04CA691C015}">
+     <direct-mapping>
+      <src-attribute>AccountName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+    <import-flow src-ma="{05BB23DA-520E-4642-8183-0BA5AFF83119}" cd-object-type="group" id="{28D334E8-ECCB-4D97-A0CC-5507614E1EC3}">
+     <sync-rule-mapping mapping-type="direct" sync-rule-id="{2E75D44B-B380-E211-9406-00155DF96300}" sync-rule-mapping-id="{A3BD335C-612A-4D65-8E7E-EB8592939768}" initial-flow-only="false" is-existence-test="false">
+      <src-attribute>sAMAccountName</src-attribute>
+     </sync-rule-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRulesList" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{7DBC5FA6-E17C-4EEE-8984-00E9099520D4}">
+     <direct-mapping>
+      <src-attribute>ExpectedRulesList</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="Group" id="{31FB668F-907B-41EF-831D-A61BF0629603}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="detectedRuleEntry">
+   <import-flows mv-attribute="csObjectID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="DetectedRuleEntry" id="{C1938F09-EB8B-4819-9271-2EFCB56E438D}">
+     <direct-mapping>
+      <src-attribute intrinsic="true">dn</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="synchronizationRule">
+   <import-flows mv-attribute="msidmOutboundScopingFilters" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{BB1879D4-E197-4B90-A4AF-339C321AC33D}">
+     <direct-mapping>
+      <src-attribute>msidmOutboundScopingFilters</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="msidmOutboundIsFilterBased" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{5248E9AF-E558-426F-B0A5-B56CA669248A}">
+     <direct-mapping>
+      <src-attribute>msidmOutboundIsFilterBased</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleParameters" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{00FB50C4-C836-4A8E-BA9B-FFE3740DCBAC}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleParameters</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="relationshipCriteria" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{97543602-3BE0-43F0-AB90-F28372F66049}">
+     <direct-mapping>
+      <src-attribute>RelationshipCriteria</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="precedence" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{6E51A2C5-1591-487F-A567-4000B09499B0}">
+     <direct-mapping>
+      <src-attribute>Precedence</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="persistentFlow" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C4C9EAA2-3E42-446F-8CD4-6847BE115178}">
+     <direct-mapping>
+      <src-attribute>PersistentFlow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="initialFlow" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C4259990-5772-442B-A753-7DC35DCCCF69}">
+     <direct-mapping>
+      <src-attribute>InitialFlow</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="ilmObjectType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{ED02D35C-38AE-42E2-8825-6664546D208A}">
+     <direct-mapping>
+      <src-attribute>ILMObjectType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="flowType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{01B0A69D-AF20-4A71-9773-DD77A4B024FD}">
+     <direct-mapping>
+      <src-attribute>FlowType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="existenceTest" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{FCFEAA7E-A96F-44E8-A543-F7383BC001B4}">
+     <direct-mapping>
+      <src-attribute>ExistenceTest</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="displayName" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{F717F10C-4517-4612-A4EF-A6CD6002F493}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="disconnectConnectedSystemObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{C0D3C8CD-2F74-43E3-8B14-7808E4A94BDC}">
+     <direct-mapping>
+      <src-attribute>DisconnectConnectedSystemObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="dependency" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{17B9958D-0AE4-41BF-A1AE-21176CDBC0E9}">
+     <direct-mapping>
+      <src-attribute>Dependency</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="createILMObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{F0F5C6E1-9965-4503-98D1-A13F31A8877D}">
+     <direct-mapping>
+      <src-attribute>CreateILMObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="createConnectedSystemObject" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{05ACE946-3CD1-432E-B242-52B2CA4C7058}">
+     <direct-mapping>
+      <src-attribute>CreateConnectedSystemObject</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="connectedSystemScope" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{6D476667-445D-4748-B383-8E8D64B547E3}">
+     <direct-mapping>
+      <src-attribute>ConnectedSystemScope</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="connectedSystem" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{60BF4CCB-7B73-4658-A4C0-E28356702784}">
+     <direct-mapping>
+      <src-attribute>ConnectedSystem</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="connectedObjectType" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="SynchronizationRule" id="{52C242E8-C529-4CA8-A7F2-89D1269E9EE9}">
+     <direct-mapping>
+      <src-attribute>ConnectedObjectType</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <import-flow-set mv-object-type="expectedRuleEntry">
+   <import-flows mv-attribute="displayName" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{B88BB2C9-3C5E-48FF-84F1-D0E39D8289F6}">
+     <direct-mapping>
+      <src-attribute>DisplayName</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleID" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{7ADFB814-81C4-4A98-8FB0-8FF992E7F8AE}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleID</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="synchronizationRuleData" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{C324C877-0555-4105-A2CD-83D94681C7C4}">
+     <direct-mapping>
+      <src-attribute>SynchronizationRuleData</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="expectedRuleEntryAction" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{BA80AED2-253E-4A57-92F5-9D587A9EF52D}">
+     <direct-mapping>
+      <src-attribute>ExpectedRuleEntryAction</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+   <import-flows mv-attribute="createdTime" type="ranked">
+    <import-flow src-ma="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}" cd-object-type="ExpectedRuleEntry" id="{747058C3-8A60-48B1-8615-E308F5CE4A67}">
+     <direct-mapping>
+      <src-attribute>CreatedTime</src-attribute>
+     </direct-mapping>
+    </import-flow>
+   </import-flows>
+  </import-flow-set>
+  <per-ma-options>
+   <ma-options ma-id="{A0C395AE-EF55-44F0-95D5-7899F5BC09A2}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{B763605A-B93C-405F-9930-67DEBD73D18B}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{EA1418F9-48FA-4323-B7EF-DA3C993988D0}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{05BB23DA-520E-4642-8183-0BA5AFF83119}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+   <ma-options ma-id="{7EAA0112-59AD-476C-8458-170B8F1A5EF0}">
+    <enable-recall>true</enable-recall>
+   </ma-options>
+  </per-ma-options>
+ </import-attribute-flow>
+</mv-data>
+
+</export-ma>
