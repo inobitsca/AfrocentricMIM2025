@@ -7,8 +7,8 @@
     <ProjectGuid>{003DCC54-DF37-4F23-888B-FF74F7B1E14A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SAPHRExtension</RootNamespace>
-    <AssemblyName>SAPHRExtension</AssemblyName>
+    <RootNamespace>HRExtension</RootNamespace>
+    <AssemblyName>HRExtension</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

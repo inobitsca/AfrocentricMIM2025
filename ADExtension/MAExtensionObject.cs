@@ -1,3 +1,24 @@
+﻿// Tagging logic for extensionAttribute1
+public static class UserTagging
+{
+    public const string TagAttribute = "extensionAttribute1";
+    public const string Suspended = "Suspended";
+    public const string Reactivate = "Reactivate";
+
+    // Returns true if the user is tagged as suspended
+    public static bool IsSuspended(MVEntry mventry)
+    {
+        var tag = mventry[TagAttribute]?.Value;
+        return string.Equals(tag, Suspended, StringComparison.OrdinalIgnoreCase);
+    }
+
+    // Returns true if the user is tagged for reactivation
+    public static bool IsReactivation(MVEntry mventry)
+    {
+        var tag = mventry[TagAttribute]?.Value;
+        return string.Equals(tag, Reactivate, StringComparison.OrdinalIgnoreCase);
+    }
+}
 ﻿using Microsoft.MetadirectoryServices;
 using System;
 using System.Collections.Generic;
@@ -16,18 +37,27 @@ namespace ADExtension
             {
                 case "cd.user:userAccountControl<-mv.person:employeeStatus,accountName":
                     {
-                        // Get the employeeStatus for the record. Need to check the Staff and Contractor status.
-                        string employeeStatus = null;
-                        if (mventry["employeeStatus"].IsPresent & csentry["userAccountControl"].IsPresent)
+                        // Tagging logic: override default enable/disable based on extensionAttribute1
+                        long ADS_UF_NORMAL_ACCOUNT = 0x200;
+                        long ADS_UF_ACCOUNTDISABLE = 0x2;
+                        long ADS_UF_PASSWD_NOTREQD = 0x20;
+
+                        long currentValue = csentry["userAccountControl"].IntegerValue;
+
+                        if (UserTagging.IsSuspended(mventry))
                         {
-                            employeeStatus = mventry["employeeStatus"].Value;
-
-                            long ADS_UF_NORMAL_ACCOUNT = 0x200;
-                            long ADS_UF_ACCOUNTDISABLE = 0x2;
-                            long ADS_UF_PASSWD_NOTREQD = 0x20;
-
-                            long currentValue = csentry["userAccountControl"].IntegerValue;
-
+                            // Always disable account if tagged as Suspended
+                            csentry["userAccountControl"].IntegerValue = currentValue | ADS_UF_ACCOUNTDISABLE;
+                        }
+                        else if (UserTagging.IsReactivation(mventry))
+                        {
+                            // Enable account if tagged for Reactivation (override inactivity/disable)
+                            csentry["userAccountControl"].IntegerValue = (currentValue | ADS_UF_NORMAL_ACCOUNT) & (~ADS_UF_ACCOUNTDISABLE);
+                            // NOTE: Clearing the tag after 24 hours should be handled by a scheduled process or external workflow
+                        }
+                        else if (mventry["employeeStatus"].IsPresent & csentry["userAccountControl"].IsPresent)
+                        {
+                            string employeeStatus = mventry["employeeStatus"].Value;
                             switch ((employeeStatus))
                             {
                                 case "Active":
@@ -38,9 +68,6 @@ namespace ADExtension
 
                                 case "Terminated":
                                     {
-                                        // csentry("userAccountControl").IntegerValue = currentValue _
-                                        // Or ADS_UF_ACCOUNTDISABLE _
-                                        // Or ADS_UF_PASSWD_NOTREQD
                                         csentry["userAccountControl"].IntegerValue = currentValue | ADS_UF_ACCOUNTDISABLE;
                                         break;
                                     }
