@@ -29,8 +29,6 @@ namespace MIMModels
 
         public string HREmployeesMAName { get; set; }
         public string HRContractorsMAName { get; set; }
-        public string GalSyncTelkomMA { get; set; }
-        public string GalSyncBCXMA { get; set; }
 
         public List<MIMRule> CountryDomains { get; set; } = new List<MIMRule>();
 

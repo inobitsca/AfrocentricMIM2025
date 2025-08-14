@@ -34,7 +34,7 @@ namespace HRExtension
 
                 case "cd.person:TransitionEmployeeStatus":
                     {
-                        if (csentry["EmplStatus"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
+                        if (csentry["STATUS"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
                         {
                         
                             var ActiveContractor = false;
@@ -43,7 +43,7 @@ namespace HRExtension
                             var AllContractorConnectors = mventry.ConnectedMAs[mimConfig.HRContractorsMAName].Connectors;
                             foreach (var item in AllContractorConnectors)
                             {
-                                if (item["EmplStatus"].BooleanValue  == true)
+                                if (item["STATUS"].BooleanValue  == true)
                                 {
                                     ActiveContractor = true;
                                 }
@@ -52,7 +52,7 @@ namespace HRExtension
                             var AllEmployeeConnectors = mventry.ConnectedMAs[mimConfig.HREmployeesMAName].Connectors;
                             foreach (var item in AllEmployeeConnectors)
                             {
-                                if (item["EmplStatus"].BooleanValue == true)
+                                if (item["STATUS"].BooleanValue == true)
                                 {
                                     ActiveEmployee = true;
                                 }
@@ -262,7 +262,7 @@ namespace HRExtension
 
                 case "cd.person:<dn>->mv.person:ProvisionRequestAD":
                     {
-                        if ((mventry["objectSid"].IsPresent == false) & (mventry["ProvisionRequestAD"].IsPresent == false) & mventry["employeeStatus"].IsPresent & mventry["nickName"].IsPresent & mventry["sn"].IsPresent & mventry["displayName"].IsPresent)
+                        if ((mventry["objectSid"].IsPresent == false) & (mventry["ProvisionRequestAD"].IsPresent == false) & mventry["employeeStatus"].IsPresent & mventry["Known_As"].IsPresent & mventry["sn"].IsPresent & mventry["displayName"].IsPresent)
                         {
                             if (mventry["employeeStatus"].Value == "Active")
                                 mventry["ProvisionRequestAD"].Value = "Not Approved";
@@ -275,18 +275,18 @@ namespace HRExtension
                     {
                         // possible problem for new entries if values are not present
                         // added the mv-employeeNumber is present check in first if to exclude new entries from older where Id numbers are not present
-                        // note: if the EmplStatus value = true (Active) then we process else not
+                        // note: if the STATUS value = true (Active) then we process else not
                         // parsedate results are: if parsedate is less than today then return value is -1
                         // if parsedate is equal to today then return value is 0
                         // if parsedate is greater than today then return value is 1
 
                         if (mventry["IDNumber"].IsPresent & mventry["employeeNumber"].IsPresent)
                         {
-                            if (csentry["IDNr"].IsPresent & csentry["EmployeeNumber"].IsPresent & csentry["EmplStatus"].IsPresent & csentry["EmployeeType"].IsPresent & csentry["EmployeeStartDate"].IsPresent)
+                            if (csentry["IDNr"].IsPresent & csentry["EmployeeNumber"].IsPresent & csentry["STATUS"].IsPresent & csentry["EmployeeType"].IsPresent & csentry["EmployeeStartDate"].IsPresent)
                             {
                                 if (csentry["IDNr"].Value == mventry["IDNumber"].Value & csentry["EmployeeNumber"].Value != mventry["employeeNumber"].Value)
                                 {
-                                    if (Convert.ToBoolean(csentry["EmplStatus"].Value) == true)
+                                    if (Convert.ToBoolean(csentry["STATUS"].Value) == true)
                                     {
                                         string CSDate;
                                         CSDate = csentry["EmployeeStartDate"].Value; // Read the date from the CS
@@ -319,12 +319,12 @@ namespace HRExtension
                         break;
                     }
 
-                case "cd.person:NickName->mv.person:nickName":
+                case "cd.person:Known_As->mv.person:Known_As":
                     {
-                        if (csentry["NickName"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
+                        if (csentry["Known_As"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
                         {
                             if (csentry["EmployeeNumber"].Value == mventry["EmployeeNumber"].Value)
-                                mventry["nickName"].Value = csentry["NickName"].Value.Trim();
+                                mventry["Known_As"].Value = csentry["Known_As"].Value.Trim();
                         }
 
                         break;
@@ -376,13 +376,13 @@ namespace HRExtension
 
 
 
-                case "cd.person:EmplStatus->mv.person:employeeStatus":
+                case "cd.person:STATUS->mv.person:employeeStatus":
                     {
-                        if (csentry["EmplStatus"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
+                        if (csentry["STATUS"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
                         {
                             if (csentry["EmployeeNumber"].Value == mventry["EmployeeNumber"].Value)
                             {
-                                switch (csentry["EmplStatus"].Value)
+                                switch (csentry["STATUS"].Value)
                                 {
                                     case "True":
                                         {
@@ -451,15 +451,15 @@ namespace HRExtension
                         break;
                     }
 
-                case "cd.person:LastName,NickName->mv.person:displayName":
+                case "cd.person:LastName,Known_As->mv.person:displayName":
                     {
-                        if (csentry["LastName"].IsPresent & csentry["NickName"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
+                        if (csentry["LastName"].IsPresent & csentry["Known_As"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
                         {
                             if (csentry["EmployeeNumber"].Value == mventry["EmployeeNumber"].Value)
                             {
                                 string sn = csentry["LastName"].Value.Trim();
-                                string Nickname = csentry["NickName"].Value.Trim();
-                                mventry["displayName"].Value = Nickname + " " + sn + " - " + "BCX";
+                                string Known_As = csentry["Known_As"].Value.Trim();
+                                mventry["displayName"].Value = Known_As + " " + sn + " - " + "BCX";
                             }
                         }
 
