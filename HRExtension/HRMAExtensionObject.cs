@@ -1,10 +1,10 @@
-﻿using Microsoft.MetadirectoryServices;
-using MIMModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.MetadirectoryServices;
+using MIMModels;
 
 namespace HRExtension
 {
@@ -36,14 +36,14 @@ namespace HRExtension
                     {
                         if (csentry["STATUS"].IsPresent & csentry["EmployeeNumber"].IsPresent & mventry["EmployeeNumber"].IsPresent)
                         {
-                        
+
                             var ActiveContractor = false;
                             var ActiveEmployee = false;
 
                             var AllContractorConnectors = mventry.ConnectedMAs[mimConfig.HRContractorsMAName].Connectors;
                             foreach (var item in AllContractorConnectors)
                             {
-                                if (item["STATUS"].BooleanValue  == true)
+                                if (item["STATUS"].BooleanValue == true)
                                 {
                                     ActiveContractor = true;
                                 }

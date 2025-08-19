@@ -203,7 +203,7 @@ namespace MIMModels
             }
         }
 
-            public enum RuleTypes
+        public enum RuleTypes
         {
             HomeMDB,
             EmailServer,

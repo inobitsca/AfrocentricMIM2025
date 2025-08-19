@@ -1,10 +1,4 @@
-﻿using Microsoft.MetadirectoryServices;
-using MIMModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MIMModels;
 
 namespace MVExtension
 {
@@ -15,7 +9,7 @@ namespace MVExtension
         {
             try
             {
-                mimConfig = MIMModels.MIMConfig.LoadMIMConfigFromFile("MIMConfig2022.json");
+                mimConfig = MIMModels.MIMConfig.LoadMIMConfigFromFile("MIMConfig2025.json");
             }
             catch (Exception ex)
             {
@@ -27,7 +21,7 @@ namespace MVExtension
 
         void IMVSynchronization.Provision(MVEntry mventry)
         {
-            // FIM still runs each provisioning extension against all metaverse objects so if it is not the person object exit the sub
+            // MIM still runs each provisioning extension against all metaverse objects so if it is not the person object exit the sub
             switch (mventry.ObjectType)
             {
                 case "person":
@@ -36,13 +30,13 @@ namespace MVExtension
 
                         // 'Clean up the Portal - Delete Users without a DisplayName
                         if (!mventry["displayName"].IsPresent)
-                            mventry.ConnectedMAs["FIM"].Connectors.DeprovisionAll();
+                            mventry.ConnectedMAs["MIM"].Connectors.DeprovisionAll();
 
                         // 'Clean up the Portal - Delete Terminated Users
                         if (mventry["employeeStatus"].IsPresent)
                         {
                             if (mventry["employeeStatus"].Value.ToLower() == "terminated")
-                                mventry.ConnectedMAs["FIM"].Connectors.DeprovisionAll();
+                                mventry.ConnectedMAs["MIM"].Connectors.DeprovisionAll();
                         }
 
 
@@ -280,9 +274,9 @@ namespace MVExtension
                             var ActiveEmployee = false;
                             DateTime LatestContractorStartDate = DateTime.Parse("1 Jan 1900");
                             DateTime LatestEmployeeStartDate = DateTime.Parse("1 Jan 1900");
-                            
+
                             var DoomedContractors = new List<CSEntry>();
-                            
+
                             var AllContractorConnectors = mventry.ConnectedMAs[mimConfig.HRContractorsMAName].Connectors;
                             foreach (var item in AllContractorConnectors)
                             {
@@ -493,7 +487,7 @@ namespace MVExtension
             {
                 // Check if the passed strAcctName value exists in the metaverse by 
                 // using the Utils.FindMVEntries method.
-                findResultList = Utils.FindMVEntries(attribute_to_check, checkedName, 1);
+                findResultList = InoUtils.FindMVEntries(attribute_to_check, checkedName, 1);
 
                 // If the value does not exist in the metaverse, use the passed value 
                 // as the metaverse value. 
@@ -530,7 +524,7 @@ namespace MVExtension
             {
                 // Check if the passed checkedName value exists in the metaverse by 
                 // using the Utils.FindMVEntries method. 
-                findResultList = Utils.FindMVEntries(attribute_to_check, checkedName, 1);
+                findResultList = InoUtils.FindMVEntries(attribute_to_check, checkedName, 1);
 
                 // If the value does not exist in the metaverse, use the passed value 
                 // as the metaverse value. 
@@ -562,7 +556,7 @@ namespace MVExtension
             {
                 // Check if the passed checkedName value exists in the metaverse by 
                 // using the Utils.FindMVEntries method. 
-                findResultList = Utils.FindMVEntries(attribute_to_check, checkedName, 1);
+                findResultList = InoUtils.FindMVEntries(attribute_to_check, checkedName, 1);
 
                 // If the value does not exist in the metaverse, use the passed value 
                 // as the metaverse value. 
@@ -579,5 +573,9 @@ namespace MVExtension
         }
 
 
+    }
+
+    public class IMVSynchronization
+    {
     }
 }

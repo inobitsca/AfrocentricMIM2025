@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Web.UI.WebControls;
 using System.Workflow.ComponentModel;
+using FIM.CustomWorkflowActivitiesLibrary.Activities.WebUIs.RequestLoggingActivity;
 using Microsoft.IdentityManagement.WebUI.Controls;
 using Microsoft.ResourceManagement.Workflow.Activities;
-using FIM.CustomWorkflowActivitiesLibrary.Activities.WebUIs.RequestLoggingActivity;
 
 namespace FIM.CustomWorkflowActivitiesLibrary.WebUIs
 {
-    class RequestLoggingActivitySettingsPart : ActivitySettingsPart
+    internal class RequestLoggingActivitySettingsPart : ActivitySettingsPart
     {
         /// <summary>
         /// Called when a user clicks the Save button in the Workflow Designer. 

@@ -31,6 +31,9 @@ namespace MIMModels
             }
         }
 
-
+        internal static MVEntry[] FindMVEntries(string attribute_to_check, string checkedName, int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

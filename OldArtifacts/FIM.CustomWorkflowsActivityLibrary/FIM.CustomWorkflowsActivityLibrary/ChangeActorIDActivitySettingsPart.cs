@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Web.UI.WebControls;
 using System.Workflow.ComponentModel;
-using Microsoft.IdentityManagement.WebUI.Controls;
-using Microsoft.ResourceManagement.Workflow.Activities;
 using FIM.CustomWorkflowActivitiesLibrary.Activities;
 using FIM.CustomWorkflowActivitiesLibrary.Activities.WebUIs.ChangeActorId;
+using Microsoft.IdentityManagement.WebUI.Controls;
+using Microsoft.ResourceManagement.Workflow.Activities;
 
 
 namespace FIM.CustomWorkflowActivitiesLibrary.WebUIs
 {
-    class ChangeActorIDActivitySettingsPart : ActivitySettingsPart
+    internal class ChangeActorIDActivitySettingsPart : ActivitySettingsPart
 
     {
         /// <summary>

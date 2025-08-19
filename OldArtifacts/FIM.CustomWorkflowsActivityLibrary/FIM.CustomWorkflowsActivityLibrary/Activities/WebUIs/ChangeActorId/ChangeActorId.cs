@@ -1,18 +1,18 @@
 ﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.Design;
 using System.Collections;
-using System.Linq;
-using System.Workflow.ComponentModel;
-using System.Workflow.ComponentModel.Design;
-using System.Workflow.ComponentModel.Compiler;
-using System.Workflow.ComponentModel.Serialization;
-using System.Workflow.Runtime;
-using System.Workflow.Activities;
-using System.Workflow.Activities.Rules;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.IO;
+using System.Linq;
+using System.Workflow.Activities;
+using System.Workflow.Activities.Rules;
+using System.Workflow.ComponentModel;
+using System.Workflow.ComponentModel.Compiler;
+using System.Workflow.ComponentModel.Design;
+using System.Workflow.ComponentModel.Serialization;
+using System.Workflow.Runtime;
 //The following two namespaces define the FIM object model
 using Microsoft.ResourceManagement.WebServices.WSResourceManagement;
 using Microsoft.ResourceManagement.Workflow.Activities;
@@ -84,7 +84,7 @@ namespace FIM.CustomWorkflowActivitiesLibrary.Activities.WebUIs.ChangeActorId
             ReadUser.ResourceId = ReadCurrentRequestActivity.CurrentRequest.Target.GetGuid();
 
             //Set the selection parameters
-            ReadUser.SelectionAttributes = new string[] {"ProvisionRequestAD"};
+            ReadUser.SelectionAttributes = new string[] { "ProvisionRequestAD" };
         }
 
         private void InitialiseUpdateUser_ExecuteCode(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace FIM.CustomWorkflowActivitiesLibrary.Activities.WebUIs.ChangeActorId
 
                 //Set the actor ID. This is set in the FIM Custom Activity UI and used to trigger the MPR for the Approval Workflow
                 UpdateUser.ActorId = new Guid(ActorIdGuid.ToString());
-                UpdateUser.ApplyAuthorizationPolicy = true;                
+                UpdateUser.ApplyAuthorizationPolicy = true;
                 UpdateUser.ResourceId = ReadCurrentRequestActivity.CurrentRequest.Target.GetGuid();
 
                 //Create a list of UpdateRequestParameter objects

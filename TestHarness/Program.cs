@@ -15,7 +15,7 @@
             mimConfig.GalSyncBCXMA = "bcx";
             mimConfig.GalSyncTelkomMA = "telkom";
 
-            mimConfig.CountryDomains.Add(new MIMModels.MIMRule() { Target = "South Africa",  Value = "bcx.co.za", IsDefault = true });
+            mimConfig.CountryDomains.Add(new MIMModels.MIMRule() { Target = "South Africa", Value = "bcx.co.za", IsDefault = true });
             mimConfig.CountryDomains.Add(new MIMModels.MIMRule() { Target = "Mozambique", Value = "bcx.co.mz", IsDefault = false });
             mimConfig.CountryDomains.Add(new MIMModels.MIMRule() { Target = "Zambia", Value = "bcx.co.zm", IsDefault = false });
             mimConfig.CountryDomains.Add(new MIMModels.MIMRule() { Target = "Botswana", Value = "bcx.bw", IsDefault = false });
@@ -30,7 +30,7 @@
             mimConfig.NamedValues.Add(new MIMModels.RuleNamedValue() { NamedValueID = 2, NamedValue = "/o=CPX/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXMAZJV01" });
 
             mimConfig.HomeMDBRules.Add(new MIMModels.MIMRule() { Target = "Default", Value = "", NamedValueID = 1, IsDefault = true });
-            mimConfig.HomeMDBRules.Add(new MIMModels.MIMRule() { Target = "Sandton", Value = "CN=FIMProvDBCN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=CPX,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=enterprise,DC=root", IsDefault = false});
+            mimConfig.HomeMDBRules.Add(new MIMModels.MIMRule() { Target = "Sandton", Value = "CN=FIMProvDBCN=Databases,CN=Exchange Administrative Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=CPX,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=enterprise,DC=root", IsDefault = false });
 
             mimConfig.EmailServers.Add(new MIMModels.MIMRule() { Target = "Default", NamedValueID = 2, IsDefault = true });
 
@@ -39,7 +39,7 @@
 
             mimConfig = MIMModels.MIMConfig.LoadMIMConfigFromFile("MIMConfig2022.json");
             //System.IO.File.WriteAllText($"Error-MIMConfig2022.json not found-{DateTime.Now.ToString("ddMMMyyyyHHmmss")}.txt", "booyah");
-            
+
             Console.WriteLine("Country Rules Test");
             Console.WriteLine($"Country: France - Value: {mimConfig.GetValue(MIMModels.MIMConfig.RuleTypes.CountryDomains, "France")}");
             Console.WriteLine($"Country: South Africa - Value: {mimConfig.GetValue(MIMModels.MIMConfig.RuleTypes.CountryDomains, "South Africa")}");
